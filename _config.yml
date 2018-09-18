@@ -1,0 +1,8 @@
+title: aahamlin.github.io
+description: "\"The longest way 'round is the shortest way home.\" - Alexander MacLaren"
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions
