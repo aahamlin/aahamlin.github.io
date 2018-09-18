@@ -14,7 +14,7 @@
 + aahamlin \[at\] gmail \[dot\] com  
 + https://www.linkedin.com/in/andrewahamlin
 
-Download my [current resume](/files/andrew_hamlin_2018.pdf).
+Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
 
 ---
 
