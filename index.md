@@ -4,7 +4,7 @@
 
 **EXPERTISE** - Champions a continuous improvement mindset. Designed and implemented globalized enterprise systems on Windows and Linux platforms using a Secure Software Development Lifecycle (SSDLC). Trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Managed globally distributed teams including offshore vendors. 
 
-**CUSTOMER** - Transformed the sustained engineering process; defined and measured key performance indicators (KPI), applied data-driven changes and was consistently meeting 100% of service-level agreements within 6 months; awarded **2013 Employee Recognition Award**.
+**CUSTOMER** - Transformed the sustained engineering process; defined and measured key performance indicators (KPI), applied data-driven changes and was consistently meeting 100% of service-level agreements within 6 months; awarded _2013 Employee Recognition Award_.
 
 > "You turned the SE function around and our KLAS scores are already improving. You and your team have direct impact on the success of the IAM business." - Ralf Klein, VP IAM Products, Caradigm
 
