@@ -10,6 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -44,6 +45,21 @@
 
       </section>
       <footer>
+
+        <h6>Contact Information</h6>
+
+        {% if site.email %}
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i><small>{{ site.email }}</small></p>
+        {% endif %}
+
+        {% if site.linkedin_url %}
+        <p><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href=">{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></p>
+        {% endif %}
+
+        {% if site.resume_url %}
+        <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ site.resume_url }}">Resume</a></p>
+        {% endif %}
+        
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}

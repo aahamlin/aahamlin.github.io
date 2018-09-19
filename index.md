@@ -118,13 +118,3 @@ Developed & maintained content management system in Drupal, PHP, & MySQL
 
 **Sound Engineering & Music (percussion)**, Lebanon Valley College, Annville, PA
 
----
-
-#### Contact information
-
-aahamlin[at]gmail.com
-[https://www.linkedin.com/in/andrewahamlin](https://www.linkedin.com/in/andrewahamlin)
-
-Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
-
----
