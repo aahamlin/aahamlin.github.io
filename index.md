@@ -87,7 +87,7 @@ Threat modeling, Profiling & performance tuning, PKI, SNMP, Active Directory, Fu
 
 ## PERSONAL PROJECTS
 
-###Jira Reporting Tools
+### Jira Reporting Tools
 
 Created Python command [qjira](https://github.com/aahamlin/jira_reporting_scripts) to export data from Jira into CSV (and other) formats for improved reporting.
 
@@ -95,15 +95,15 @@ Created Python command [qjira](https://github.com/aahamlin/jira_reporting_script
 
 ## VOLUNTEER EXPERIENCE
 
-###2014 – 2015 &#8212; Instructor, The Master's School
+### 2014 – 2015 &#8212; Instructor, The Master's School
 
 Introduction to programming through Minecraft and other games (elective)
 
-###2010 - 2016 &#8212; YMCA Swim Team Volunteer, Greater Hartford YMCA
+### 2010 - 2016 &#8212; YMCA Swim Team Volunteer, Greater Hartford YMCA
 
 Level 1 Swim Official, Timing console
 
-###2008 – 2010 &#8212; Webmaster, Covenant Presbyterian Church
+### 2008 – 2010 &#8212; Webmaster, Covenant Presbyterian Church
 
 Developed & maintained content management system in Drupal, PHP, & MySQL
 
