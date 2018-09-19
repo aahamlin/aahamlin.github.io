@@ -46,20 +46,20 @@
       </section>
       <footer>
 
-        <h6>Contact Information</h6>
+        <h6 class="center">Contact Information</h6>
 
         <ul class="fa-ul">
           
         {% if site.email %}
-        <li><i class="fa-li fa-envelope-o"></i>{{ site.email }}</li>
+        <li><i class="fas fa-li fa-envelope"></i>{{ site.email }}</li>
         {% endif %}
 
         {% if site.linkedin_url %}
-        <li><i class="fa-li fa-linkedin-square"></i><a href="{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></li>
+        <li><i class="fab fa-li fa-linkedin"></i><a href="{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></li>
         {% endif %}
 
         {% if site.resume_url %}
-        <li><i class="fa-li fa-file-pdf-o"></i><a href="{{ site.resume_url }}">Resume</a></li>
+        <li><i class="far fa-li fa-file-pdf"></i><a href="{{ site.resume_url }}">Resume</a></li>
         {% endif %}
 
         </ul>
