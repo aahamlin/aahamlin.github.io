@@ -6,7 +6,8 @@
 
 **CUSTOMER** - Transformed the sustained engineering process; defined and measured key performance indicators (KPI), applied data-driven changes and was consistently meeting 100% of service-level agreements within 6 months; awarded _2013 Employee Recognition Award_.
 
-> "You turned the SE function around and our KLAS scores are already improving. You and your team have direct impact on the success of the IAM business." - Ralf Klein, VP IAM Products, Caradigm
+> "You turned the SE function around and our KLAS scores are already improving. You and your team have direct impact on the success of the IAM business."
+> - Ralf Klein, VP IAM Products, Caradigm
 
 ---
 
@@ -44,7 +45,8 @@ Led teams of 6 - 10 engineers including offshore, implementing components in Pyt
 
 Provided SSO & RFID reader support and Software Development Kit (SDK) and validation tools for thin clients (VDI) including Dell Wyse, HP SmartZero, & Teradici.
 
-> "I am impressed by the work and it shows that the system was designed with partners in mind." - John Atkins, Product Manager, Wyse
+> "I am impressed by the work and it shows that the system was designed with partners in mind."
+> - John Atkins, Product Manager, Wyse
 
 Mentored developers on testable software design; increased test coverage from <20% to >70%.
 
@@ -54,7 +56,8 @@ Mediated conflicts within team over design and implementation issues
 
 Managed a distributed 8-person team in U.S. and India; team released 50+ patches and resolved 150+ support escalations in 12 months; given 2013 Employee Recognition Award
 
-> "Thank you for all your hard work with regard to the University of Pittsburgh Medical Center" - Michael Simpson, CEO, Caradigm
+> "Thank you for all your hard work with regard to the University of Pittsburgh Medical Center"
+> - Michael Simpson, CEO, Caradigm
 
 Served on 5-person leadership team to define and implement company-wide processes, standards and KPI for all SE teams
 
@@ -66,7 +69,8 @@ Designed internationalized (I18N) web administration console using WCF and Power
 
 Drove virtualization and scalability of CentOS Linux server cluster onto Microsoft Hyper-V hypervisor
 
-> "Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5" - John Lammers, Senior Development Lead, Microsoft
+> "Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5"
+> - John Lammers, Senior Development Lead, Microsoft
 
 ### Dec 1999 – Jun 2010 &#8212; Principal Software Engineer, Sentillion
 
