@@ -48,18 +48,18 @@
 
         <h6>Contact Information</h6>
 
-        <ul>
+        <ul class="fa-ul">
           
         {% if site.email %}
-        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>{{ site.email }}</li>
+        <li><i class="fa-li fa-envelope-o"></i>{{ site.email }}</li>
         {% endif %}
 
         {% if site.linkedin_url %}
-        <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></li>
+        <li><i class="fa-li fa-linkedin-square"></i><a href="{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></li>
         {% endif %}
 
         {% if site.resume_url %}
-        <li><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ site.resume_url }}">Resume</a></li>
+        <li><i class="fa-li fa-file-pdf-o"></i><a href="{{ site.resume_url }}">Resume</a></li>
         {% endif %}
 
         </ul>
