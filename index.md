@@ -1,13 +1,14 @@
 # Andrew A Hamlin
 
-## Contact information
+#### Contact information
 
-aahamlin[at]gmail.com
+* aahamlin[at]gmail.com
 
-https://www.linkedin.com/in/andrewahamlin
+* https://www.linkedin.com/in/andrewahamlin
 
 Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
 
+---
 
 **PRODUCT** - Engineering leader with full-stack development background. Passionate about delighting customers by delivering meaningful, well-crafted products.
 
