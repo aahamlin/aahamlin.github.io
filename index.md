@@ -1,15 +1,5 @@
 # Andrew A Hamlin
 
-#### Contact information
-
-* aahamlin[at]gmail.com
-
-* https://www.linkedin.com/in/andrewahamlin
-
-Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
-
----
-
 **PRODUCT** - Engineering leader with full-stack development background. Passionate about delighting customers by delivering meaningful, well-crafted products.
 
 **EXPERTISE** - Champions a continuous improvement mindset. Designed and implemented globalized enterprise systems on Windows and Linux platforms using a Secure Software Development Lifecycle (SSDLC). Trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Managed globally distributed teams including offshore vendors. 
@@ -17,7 +7,6 @@ Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
 **CUSTOMER** - Transformed the sustained engineering process; defined and measured key performance indicators (KPI), applied data-driven changes and was consistently meeting 100% of service-level agreements within 6 months; awarded _2013 Employee Recognition Award_.
 
 > "You turned the SE function around and our KLAS scores are already improving. You and your team have direct impact on the success of the IAM business." - Ralf Klein, VP IAM Products, Caradigm
-
 
 ---
 
@@ -125,3 +114,13 @@ Developed & maintained content management system in Drupal, PHP, & MySQL
 
 **Sound Engineering & Music (percussion)**, Lebanon Valley College, Annville, PA
 
+---
+
+#### Contact information
+
+* aahamlin[at]gmail.com
+* https://www.linkedin.com/in/andrewahamlin
+
+Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
+
+---
