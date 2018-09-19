@@ -48,17 +48,21 @@
 
         <h6>Contact Information</h6>
 
+        <ul>
+          
         {% if site.email %}
-        <p><i class="fa fa-envelope-o" aria-hidden="true"></i><small>{{ site.email }}</small></p>
+        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>{{ site.email }}</li>
         {% endif %}
 
         {% if site.linkedin_url %}
-        <p><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href=">{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></p>
+        <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href=">{{ site.linkedin_url }}">{{ site.linkedin_url }}</a></li>
         {% endif %}
 
         {% if site.resume_url %}
-        <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ site.resume_url }}">Resume</a></p>
+        <li><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="{{ site.resume_url }}">Resume</a></li>
         {% endif %}
+
+        </ul>
         
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
