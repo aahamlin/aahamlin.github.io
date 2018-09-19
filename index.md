@@ -12,7 +12,7 @@
 ### CONTACT INFO
 
 + aahamlin \[at\] gmail \[dot\] com
-+ (https://www.linkedin.com/in/andrewahamlin)
++ [https://www.linkedin.com/in/andrewahamlin](https://www.linkedin.com/in/andrewahamlin)
 
 Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
 
@@ -93,7 +93,7 @@ Threat modeling, Profiling & performance tuning, PKI, SNMP, Active Directory, Fu
 
 **Jira Reporting Tools**
 
-Created Python command to export data from Jira into CSV (and other) formats for improved reporting. Check out the [QJira project](https://github.com/aahamlin/jira_reporting_scripts)
+Created Python command [qjira](https://github.com/aahamlin/jira_reporting_scripts) to export data from Jira into CSV (and other) formats for improved reporting.
 
 
 ## VOLUNTEER EXPERIENCE
