@@ -9,18 +9,13 @@
 > "You turned the SE function around and our KLAS scores are already improving. You and your team have direct impact on the success of the IAM business." - Ralf Klein, VP IAM Products, Caradigm
 
 
-### CONTACT INFO
-
-+ aahamlin \[at\] gmail \[dot\] com
-+ [https://www.linkedin.com/in/andrewahamlin](https://www.linkedin.com/in/andrewahamlin)
-
 Download my [current resume](/files/andrew_hamlin_resume_2018.pdf).
 
 ---
 
 ## PROFESSIONAL EXPERIENCE
 
-**Mar 2018 - Present &#8212; Senior Software Development Manager, Gerber Technology**
+###Mar 2018 - Present &#8212; Senior Software Development Manager, Gerber Technology
 
 Coaching cross-functional teams of Developers, QA, and Product Management on Agile/SCRUM processes. 
 
@@ -28,7 +23,7 @@ Managing engineers on Gerber's AccuMark (2D/3D CAD software) team.
 
 Working with product owners, engineers, and partners to design, develop and deliver the vision of a &quot;digital platform for fashion&quot;. 
 
-**Dec 2016 - Feb 2018 &#8212; Software Development Manager, SailPoint**
+###Dec 2016 - Feb 2018 &#8212; Software Development Manager, SailPoint
 
 Collaborated with peer managers on hiring strategy, release management, & process improvements, including requirements gathering, test automation, & design tenants. 
 
@@ -36,7 +31,7 @@ Created tools to reduce errors & provide consistency and efficiency of day-to-da
 
 Participated in 2 regional user groups with 70+ participants each.
 
-**Oct 2015 - Nov 2016 &#8212; Software Development Manager, Caradigm**
+###Oct 2015 - Nov 2016 &#8212; Software Development Manager, Caradigm
 
 Led a cross-functional team of program managers, UX designers and software engineers delivering scalable web apps using Javascript/AJAX, HTML/CSS, JSON and REST APIs.
 
@@ -46,7 +41,7 @@ Coached team through Kanban, continuous delivery and automated integration testi
 
 Planned and executed recruitment, interviews and on-boarding of new employees
 
-**Dec 2013 – Sep 2015 &#8212; Development Team Lead, Caradigm**
+###Dec 2013 – Sep 2015 &#8212; Development Team Lead, Caradigm
 
 Led teams of 6 - 10 engineers including offshore, implementing components in Python, C, Java, Javascript, WebApi, Entity Framework, SQL Server 2012 and Integration Services (SSIS).
 
@@ -58,7 +53,7 @@ Mentored developers on testable software design; increased test coverage from <2
 
 Mediated conflicts within team over design and implementation issues
 
-**Jul 2012 – Nov 2013 &#8212; Development Manager, Sustained Engineering, Caradigm**
+###Jul 2012 – Nov 2013 &#8212; Development Manager, Sustained Engineering, Caradigm
 
 Managed a distributed 8-person team in U.S. and India; team released 50+ patches and resolved 150+ support escalations in 12 months; given 2013 Employee Recognition Award
 
@@ -68,7 +63,7 @@ Served on 5-person leadership team to define and implement company-wide processe
 
 Led cross-functional team to prioritize and assign work based on technical and business goals; receiving improved [KLAS](www.klasresearch.com) scores, year over year
 
-**Jul 2010 – Jun 2012 &#8212; Software Development Engineer II, Microsoft**
+###Jul 2010 – Jun 2012 &#8212; Software Development Engineer II, Microsoft
 
 Designed internationalized (I18N) web administration console using WCF and PowerShell that integrated legacy Linux systems with a Microsoft .NET platform
 
@@ -76,7 +71,7 @@ Drove virtualization and scalability of CentOS Linux server cluster onto Microso
 
 > "Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5" - John Lammers, Senior Development Lead, Microsoft
 
-**Dec 1999 – Jun 2010 &#8212; Principal Software Engineer, Sentillion**
+###Dec 1999 – Jun 2010 &#8212; Principal Software Engineer, Sentillion
 
 Designed and implemented AD domain password synchronization SOAP services integrating Java/Apache Axis2 with C#/WSE3 and Windows Local Security Authority (LSA) C++ module
 
@@ -84,29 +79,31 @@ Implemented Java Servlets and web admin console in Perl for clustered Linux serv
 
 Reduced labor and licensing costs by initiating tool & architecture changes. Automating build & manufacturing process including test coverage. Replace proprietary high availability solution with open source alternative, saving $1K per server.
 
-### ADDITIONAL SKILLS
+### Additional Skills
 
 Threat modeling, Profiling & performance tuning, PKI, SNMP, Active Directory, Functional programming (Haskell, LISP), Heroku, Google Cloud Platform, Bash, NodeJS, AngularJS, KnockoutJS, MongoDB, PostgreSQL, Git, Gulp, Grunt, Bower, Bootstrap
 
 ---
+
 ## PERSONAL PROJECTS
 
 **Jira Reporting Tools**
 
 Created Python command [qjira](https://github.com/aahamlin/jira_reporting_scripts) to export data from Jira into CSV (and other) formats for improved reporting.
 
+---
 
 ## VOLUNTEER EXPERIENCE
 
-**2014 – 2015 &#8212; Instructor, The Master's School**
+###2014 – 2015 &#8212; Instructor, The Master's School
 
 Introduction to programming through Minecraft and other games (elective)
 
-**2010 - 2016 &#8212; YMCA Swim Team Volunteer, Greater Hartford YMCA**
+###2010 - 2016 &#8212; YMCA Swim Team Volunteer, Greater Hartford YMCA
 
 Level 1 Swim Official, Timing console
 
-**2008 – 2010 &#8212; Webmaster, Covenant Presbyterian Church**
+###2008 – 2010 &#8212; Webmaster, Covenant Presbyterian Church
 
 Developed & maintained content management system in Drupal, PHP, & MySQL
 
