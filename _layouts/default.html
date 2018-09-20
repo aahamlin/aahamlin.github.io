@@ -59,7 +59,7 @@
         {% endif %}
 
         {% if site.resume_url %}
-        <li><i class="far fa-li fa-file-pdf"></i><a href="{{ site.resume_url }}">{{ site.resume_title | site.resume_url }}</a></li>
+        <li><i class="far fa-li fa-file-pdf"></i><a href="{{ site.resume_url }}">{{ site.resume_title | default: site.resume_url }}</a></li>
         {% endif %}
 
         </ul>
