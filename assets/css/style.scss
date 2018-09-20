@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+.logo {
+    width: 32px;
+}
+
 blockquote {
            border-left: 9px solid #3a1;
            background-color: #e5e5e5;
