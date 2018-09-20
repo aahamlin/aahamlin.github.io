@@ -4,7 +4,9 @@
 @import "{{ site.theme }}";
 
 .logo {
-    width: 32px;
+    width: 64px;
+    display: block;
+    margin: 15px 0;
 }
 
 blockquote {
