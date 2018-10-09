@@ -37,7 +37,7 @@ Java, C#, Python, Elm, Perl, HTML/CSS, JavaScript
 
 ### Tools & Technologies
 
-Git, TFS, SVN, Threat modeling, Profiling & performance tuning, PKI, SNMP, Active Directory, REST, SOAP, JIRA, Andriod SDK
+Git, TFS, SVN, PKI, SNMP, Active Directory, JIRA, Andriod SDK, Threat modeling, Profiling & performance tuning, Service oriented architecture (SOA)
 
 ### Cloud Environments
 
@@ -45,7 +45,7 @@ Heroku, Google Cloud Platform, OpenShift, Azure
 
 ### Frameworks
 
-NodeJS, AngularJS, KnockoutJS, Bootstrap, Express, Django, Hibernate, Spring, jBPM, WPF, WebApi, MVC5, Entity Framework, SSIS
+NodeJS, AngularJS, KnockoutJS, Bootstrap, Express, Django, Hibernate, Spring, jBPM, WPF, WebApi, MVC5, Entity Framework, SSIS, REST, SOAP
 
 ### Databases
 
