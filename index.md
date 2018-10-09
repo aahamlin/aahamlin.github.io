@@ -1,104 +1,53 @@
 # Andrew A Hamlin
 
-My software engineering interests and guiding principles come from my early exposure to Extreme Programming and I have continued striving for continual improvements and simplifications in the engineering process throughout my career. There should never be more process than absolutely necessary to support, facilitate and encourage the team. Teams should be given ownership and welcome accountability in their commitment to the craft of building great software.
+My software engineering interests and guiding principles come from my early exposure to Extreme Programming. I have continued striving for continual improvements and simplifications in the engineering process, architecture and design throughout my career.
 
-Champions a continuous improvement mindset. Designed and implemented globalized enterprise systems on Windows and Linux platforms using a Secure Software Development Lifecycle (SSDLC). Trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Managed globally distributed teams including offshore vendors. 
+There should never be more process than absolutely necessary. Teams should be given ownership and welcome accountability in their commitment to the craft of building great software.
 
-Transformed the sustained engineering process; defined and measured key performance indicators (KPI), applied data-driven changes and was consistently meeting 100% of service-level agreements within 6 months; awarded _2013 Employee Recognition Award_.
-
-> "You turned the SE function around and our KLAS scores are already improving. You and your team have direct impact on the success of the IAM business."
-> _Ralf Klein, VP IAM Products, Caradigm_
+Professionally, I have designed and implemented globalized enterprise systems on Windows and Linux platforms, using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), and containerization and CI/CD.
 
 ---
 
-## PROFESSIONAL EXPERIENCE
+## Highlights
 
-### Mar 2018 - Present &#8212; Senior Software Development Manager, Gerber Technology
+Some comments from co-workers and customers I am proud of:
 
-Coaching cross-functional teams of Developers, QA, and Product Management on Agile/SCRUM processes. 
-
-Managing engineers on Gerber's AccuMark (2D/3D CAD software) team.
-
-Working with product owners, engineers, and partners to design, develop and deliver the vision of a &quot;digital platform for fashion&quot;. 
-
-### Dec 2016 - Feb 2018 &#8212; Software Development Manager, SailPoint
-
-Collaborated with peer managers on hiring strategy, release management, & process improvements, including requirements gathering, test automation, & design tenants. 
-
-Created tools to reduce errors & provide consistency and efficiency of day-to-day project management tasks. 
-
-Participated in 2 regional user groups with 70+ participants each.
-
-### Oct 2015 - Nov 2016 &#8212; Software Development Manager, Caradigm
-
-Led a cross-functional team of program managers, UX designers and software engineers delivering scalable web apps using Javascript/AJAX, HTML/CSS, JSON and REST APIs.
-
-Shipped an identity governance solution and data warehouse; specifically targeting healthcare providers & networks. 
-
-Coached team through Kanban, continuous delivery and automated integration testing
-
-Planned and executed recruitment, interviews and on-boarding of new employees
-
-### Dec 2013 – Sep 2015 &#8212; Development Team Lead, Caradigm
-
-Led teams of 6 - 10 engineers including offshore, implementing components in Python, C, Java, Javascript, WebApi, Entity Framework, SQL Server 2012 and Integration Services (SSIS).
-
-Provided SSO & RFID reader support and Software Development Kit (SDK) and validation tools for thin clients (VDI) including Dell Wyse, HP SmartZero, & Teradici.
+On delivering SSO & RFID reader support and Software Development Kit (SDK) and validation tools for Linux thin clients (VDI) on ARM & Intel processors to partners including Dell Wyse, HP SmartZero, & Teradici.
 
 > "I am impressed by the work and it shows that the system was designed with partners in mind."
 > _John Atkins, Product Manager, Wyse_
 
-Mentored developers on testable software design; increased test coverage from <20% to >70%.
+After leading the turn-around of the Sustained Engineering function at Caradigm, where I managed a distributed 8-person team in U.S. and India to meet 100% of our SLA goals within 6 months; the team released 50+ patches and resolved 150+ support escalations in 12 months. I received the 2013 Caradigm Employee Recognition Award.
 
-Mediated conflicts within team over design and implementation issues
+> "You turned the SE function around and our [KLAS](https://www.klasresearch.com) scores are already improving. You and your team have direct impact on the success of the IAM business."
+> _Ralf Klein, VP IAM Products, Caradigm_
 
-### Jul 2012 – Nov 2013 &#8212; Development Manager, Sustained Engineering, Caradigm
-
-Managed a distributed 8-person team in U.S. and India; team released 50+ patches and resolved 150+ support escalations in 12 months; given 2013 Employee Recognition Award
-
-> "Thank you for all your hard work with regard to the University of Pittsburgh Medical Center"
-> _Michael Simpson, CEO, Caradigm_
-
-Served on 5-person leadership team to define and implement company-wide processes, standards and KPI for all SE teams
-
-Led cross-functional team to prioritize and assign work based on technical and business goals; receiving improved [KLAS](www.klasresearch.com) scores, year over year
-
-### Jul 2010 – Jun 2012 &#8212; Software Development Engineer II, Microsoft
-
-Designed internationalized (I18N) web administration console using WCF and PowerShell that integrated legacy Linux systems with a Microsoft .NET platform
-
-Drove virtualization and scalability of CentOS Linux server cluster onto Microsoft Hyper-V hypervisor
+At Microsoft, where I intervened and helped the team resolve virtualization and scalability issues of CentOS Linux server cluster onto Microsoft Hyper-V hypervisor.
 
 > "Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5"
 > _John Lammers, Senior Development Lead, Microsoft_
 
-### Dec 1999 – Jun 2010 &#8212; Principal Software Engineer, Sentillion
+---
 
-Designed and implemented AD domain password synchronization SOAP services integrating Java/Apache Axis2 with C#/WSE3 and Windows Local Security Authority (LSA) C++ module
+## Additional Skills
 
-Implemented Java Servlets and web admin console in Perl for clustered Linux servers hosting hosting Jetty and OpenLDAP; 99.999% uptime and sub-second response times
-
-Reduced labor and licensing costs by initiating tool & architecture changes. Automating build & manufacturing process including test coverage. Replace proprietary high availability solution with open source alternative, saving $1K per server.
-
-### Additional Skills
-
-#### Languages
+### Languages
 
 Java, C#, Python, Elm, Perl, HTML/CSS, JavaScript
 
-#### Tools & Technologies
+### Tools & Technologies
 
 Git, TFS, SVN, Threat modeling, Profiling & performance tuning, PKI, SNMP, Active Directory, REST, SOAP, JIRA, Andriod SDK
 
-#### Cloud Environments
+### Cloud Environments
 
 Heroku, Google Cloud Platform, OpenShift, Azure
 
-#### Frameworks
+### Frameworks
 
 NodeJS, AngularJS, KnockoutJS, Bootstrap, Express, Django, Hibernate, Spring, jBPM, WPF, WebApi, MVC5, Entity Framework, SSIS
 
-#### Databases
+### Databases
 
 MongoDB, PostgreSQL, SQL Server, MySQL, BigTable, Redis
 
