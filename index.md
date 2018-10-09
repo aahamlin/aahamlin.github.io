@@ -1,10 +1,10 @@
 # Andrew A Hamlin
 
-**PRODUCT** - Engineering leader with full-stack development background. Passionate about delighting customers by delivering meaningful, well-crafted products.
+My software engineering interests and guiding principles come from my early exposure to Extreme Programming and I have continued striving for continual improvements and simplifications in the engineering process throughout my career. There should never be more process than absolutely necessary to support, facilitate and encourage the team. Teams should be given ownership and welcome accountability in their commitment to the craft of building great software.
 
-**EXPERTISE** - Champions a continuous improvement mindset. Designed and implemented globalized enterprise systems on Windows and Linux platforms using a Secure Software Development Lifecycle (SSDLC). Trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Managed globally distributed teams including offshore vendors. 
+Champions a continuous improvement mindset. Designed and implemented globalized enterprise systems on Windows and Linux platforms using a Secure Software Development Lifecycle (SSDLC). Trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Managed globally distributed teams including offshore vendors. 
 
-**CUSTOMER** - Transformed the sustained engineering process; defined and measured key performance indicators (KPI), applied data-driven changes and was consistently meeting 100% of service-level agreements within 6 months; awarded _2013 Employee Recognition Award_.
+Transformed the sustained engineering process; defined and measured key performance indicators (KPI), applied data-driven changes and was consistently meeting 100% of service-level agreements within 6 months; awarded _2013 Employee Recognition Award_.
 
 > "You turned the SE function around and our KLAS scores are already improving. You and your team have direct impact on the success of the IAM business."
 > _Ralf Klein, VP IAM Products, Caradigm_
@@ -82,7 +82,25 @@ Reduced labor and licensing costs by initiating tool & architecture changes. Aut
 
 ### Additional Skills
 
-Threat modeling, Profiling & performance tuning, PKI, SNMP, Active Directory, Functional programming (Haskell, LISP), Heroku, Google Cloud Platform, Bash, NodeJS, AngularJS, KnockoutJS, MongoDB, PostgreSQL, Git, Gulp, Grunt, Bower, Bootstrap
+#### Languages
+
+Java, C#, Python, Elm, Perl, HTML/CSS, JavaScript
+
+#### Tools & Technologies
+
+Git, TFS, SVN, Threat modeling, Profiling & performance tuning, PKI, SNMP, Active Directory, REST, SOAP, JIRA, Andriod SDK
+
+#### Cloud Environments
+
+Heroku, Google Cloud Platform, OpenShift, Azure
+
+#### Frameworks
+
+NodeJS, AngularJS, KnockoutJS, Bootstrap, Express, Django, Hibernate, Spring, jBPM, WPF, WebApi, MVC5, Entity Framework, SSIS
+
+#### Databases
+
+MongoDB, PostgreSQL, SQL Server, MySQL, BigTable, Redis
 
 ---
 
