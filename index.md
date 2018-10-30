@@ -1,8 +1,6 @@
 # Andrew A Hamlin
 
-My software engineering interests and guiding principles come from my early exposure to Extreme Programming. I have continued striving for continual improvements and simplifications in the engineering process, architecture and design throughout my career.
-
-There should never be more process than absolutely necessary. Teams should be given ownership and welcome accountability in their commitment to the craft of building great software.
+My software engineering interests and guiding principles come from my early exposure to Extreme Programming. I have continued striving for continual improvements and simplifications in the engineering process, architecture and design throughout my career. I have captured "how to work with me" in my [manager readme](manager_readme.md).
 
 Professionally, I have designed and implemented globalized enterprise systems on Windows and Linux platforms, using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), and containerization and CI/CD.
 
@@ -10,7 +8,7 @@ Professionally, I have designed and implemented globalized enterprise systems on
 
 ## Highlights
 
-Some comments from co-workers and customers I am proud of:
+Quotes from co-workers and customers I am proud of:
 
 On delivering SSO & RFID reader support and Software Development Kit (SDK) and validation tools for Linux thin clients (VDI) on ARM & Intel processors to partners including Dell Wyse, HP SmartZero, & Teradici.
 
@@ -35,10 +33,6 @@ At Microsoft, where I intervened and helped the team resolve virtualization and 
 
 Java, C#, Python, Elm, Perl, HTML/CSS, JavaScript
 
-### Tools & Technologies
-
-Git, TFS, SVN, PKI, SNMP, Active Directory, JIRA, Andriod SDK, Threat modeling, Profiling & performance tuning, Service oriented architecture (SOA)
-
 ### Cloud Environments
 
 Heroku, Google Cloud Platform, OpenShift, Azure
@@ -51,13 +45,21 @@ NodeJS, AngularJS, KnockoutJS, Bootstrap, Express, Django, Hibernate, Spring, jB
 
 MongoDB, PostgreSQL, SQL Server, MySQL, BigTable, Redis
 
+### Tools & Technologies
+
+Git, GitHub.com, TFS, SVN, PKI, SNMP, Active Directory, JIRA, Postman, Andriod SDK, Threat modeling, Profiling & performance tuning, Service oriented architecture (SOA)
+
 ---
 
 ## PERSONAL PROJECTS
 
 ### Jira Reporting Tools
 
-Created Python command [qjira](https://github.com/aahamlin/jira_reporting_scripts) to export data from Jira into CSV (and other) formats for improved reporting.
+A Python command [qjira](https://github.com/aahamlin/jira_reporting_scripts) to export data from Jira into CSV (and other) formats for improved reporting.
+
+### Emacs Configuration
+
+An [emacs configuration](https://bitbucket.org/andrew_hamlin/emacs.d) including Node, Angular, Python, Haskell, & Elm environments.
 
 ---
 
