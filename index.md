@@ -20,13 +20,13 @@ On delivering SSO & RFID reader support and Software Development Kit (SDK) and v
 
 After leading the turn-around of the Sustained Engineering function at Caradigm, where I managed a distributed 8-person team in U.S. and India to meet 100% of our SLA goals within 6 months; the team released 50+ patches and resolved 150+ support escalations in 12 months. I received the 2013 Caradigm Employee Recognition Award.
 
-> "You turned the SE function around and our [KLAS](https://www.klasresearch.com) scores are already improving. You and your team have direct impact on the success of the IAM business."
+> You turned the SE function around and our [KLAS](https://www.klasresearch.com) scores are already improving. You and your team have direct impact on the success of the IAM business."
 > _Ralf Klein, VP IAM Products, Caradigm_
 {:.fas .fa-quote-left}
 
 At Microsoft, where I intervened and helped the team resolve virtualization and scalability issues of CentOS Linux server cluster onto Microsoft Hyper-V hypervisor.
 
-> "Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5"
+> Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5"
 > _John Lammers, Senior Development Lead, Microsoft_
 {:.fas .fa-quote-left}
 
