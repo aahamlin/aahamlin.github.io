@@ -10,12 +10,15 @@
 }
 
 blockquote {
-           border-left: 9px solid #3a1;
-           background-color: #e5e5e5;
-           font-size: 1em;
-           font-style: normal;
-           line-height: 1.5;
-           font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
+    margin: 0 0 20px 5px;
+}
+
+blockquote p {
+    display: inline;
+    font-size: 0.9em;
+    font-style: normal;
+    line-height: 1.2;
+    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
 }
 
 body {
@@ -29,12 +32,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section h2, section h3 {
-    font-variant: all-small-caps;
+    /*font-variant: all-small-caps;*/
+    font-weight: 500;
 }
 
 strong {
        font-weight: 300;
-       font-variant: all-small-caps;
        font-size: 1.25em;
 }
 
@@ -43,6 +46,7 @@ footer ul.fa-ul {
        margin-left: 0;
 }
 
-footer .center {
-       text-align: center;
+footer .contactinfo {
+    text-align: center;
+    font-variant: all-small-caps;
 }

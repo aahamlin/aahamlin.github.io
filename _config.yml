@@ -4,11 +4,11 @@ google_analytics:
 show_downloads: false
 theme: jekyll-theme-minimal
 
-gems:
+plugins:
   - jekyll-mentions
 
 email: aahamlin[at]gmail.com
 linkedin_url: https://www.linkedin.com/in/andrewahamlin
 resume_url: /files/andrew_hamlin_resume_2018.pdf
-resume_title: My Resume
+resume_title: Andrew A Hamlin Resume
 logo: /files/aahllc_logo.png
