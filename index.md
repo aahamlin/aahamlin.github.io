@@ -1,6 +1,7 @@
 # Andrew A Hamlin
 
-My software engineering interests and guiding principles come from my early exposure to Extreme Programming. I have continued striving for continual improvements and simplifications in the engineering process, architecture and design throughout my career. I have captured "how to work with me" in my [manager readme](manager_readme.md).
+As an engineering leader, I have managed globally distributed teams, driven SDLC changes, and successfully led turn-arounds of under-performing teams. I work to build highly engaged, productive teams who deliver well-crafted products. My teams have built industry-leading solutions, recognized by Gartner and KLAS.
+I strive to improve and simplify in architecture, infrastructure and process, and value honesty, integrity and humility. See my [manager readme](manager_readme.md) for insight on how best to work with me.
 
 
 ---
@@ -34,7 +35,7 @@ At Microsoft, where I intervened and helped the team resolve virtualization and 
 
 ### Languages
 
-Java, C#, Python, Elm, Perl, HTML/CSS, JavaScript
+Java, C#, Python, Elm, PowerShell, Bash, C/C++, Perl, HTML/CSS, JavaScript
 
 ### Cloud Environments
 
