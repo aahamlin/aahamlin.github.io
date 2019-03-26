@@ -1,7 +1,8 @@
 # Andrew A Hamlin
 
 As an engineering leader, I have managed globally distributed teams, driven SDLC changes, and successfully led turn-arounds of under-performing teams. I work to build highly engaged, productive teams who deliver well-crafted products. My teams have built industry-leading solutions, recognized by Gartner and KLAS.
-I strive to improve and simplify in architecture, infrastructure and process, and value honesty, integrity and humility. See my [manager readme](manager_readme.md) for insight on how best to work with me.
+
+See my [resume](files/andrew_hamlin_resume.pdf) and [manager readme](manager_readme.md) for additional insights about me.
 
 
 ---
