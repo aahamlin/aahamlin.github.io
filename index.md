@@ -9,7 +9,22 @@ See my [resume](files/andrew_hamlin_resume.pdf) and [manager readme](manager_rea
 
 ## Highlights
 
-Professionally, I have designed and implemented globalized enterprise systems on Windows and Linux platforms, using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), and containerization and CI/CD.
+Professionally, I have designed and implemented globalized enterprise systems on Windows and Linux platforms, using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), containerization and CI/CD, as well as, development frameworks and methods, e.g. Agile/Kanban/Lean. 
+
+### Data-driven changes
+
+Here are a few samples of analysis and results from data-driven process changes I have led.
+
+Initial cycle time analysis showing that approx 25% of new features could be completed in a 2-week sprint. Further break down of the stages of the development workflow identified specific bottlenecks which where then addressed.
+![Cycle time analysis](/files/cycletime.png)
+
+Before making process changes sprint velocity was erratic, measuring the difference between our time estimates and actuals using mean absolute percentage error (MAPE), our sprint planning effectiveness yielded a **70% MAPE**. 
+![Velocity before changes](/files/velocity-v1200.png)
+
+After the cycletime analysis and addressing specific bottlenecks, our ability to plan a sprint increased dramatically and yielded a **29% MAPE**.
+![Velocity after changes](/files/velocity-v1210.png)
+
+### Feedback
 
 Quotes from co-workers and customers I am proud of:
 
@@ -36,11 +51,7 @@ At Microsoft, where I intervened and helped the team resolve virtualization and 
 
 ### Languages
 
-Java, C#, Python, Elm, PowerShell, Bash, C/C++, Perl, HTML/CSS, JavaScript
-
-### Cloud Environments
-
-Heroku, Google Cloud Platform, OpenShift, Azure
+Java, C#, Python, HTML/CSS, JavaScript, PowerShell, Bash, Perl, C/C++, Elm
 
 ### Frameworks
 
@@ -53,6 +64,11 @@ MongoDB, PostgreSQL, SQL Server, MySQL, BigTable, Redis
 ### Tools & Technologies
 
 Git, GitHub.com, TFS, SVN, PKI, SNMP, Active Directory, JIRA, Postman, Andriod SDK, Threat modeling, Profiling & performance tuning, Service oriented architecture (SOA)
+
+### Cloud Environments
+
+Heroku, Google Cloud Platform, OpenShift, Azure
+
 
 ---
 
@@ -76,7 +92,7 @@ Introduction to programming through Minecraft and other games (elective)
 
 ### 2010 - 2016 &#8212; YMCA Swim Team Volunteer, Greater Hartford YMCA
 
-Level 1 Swim Official, Timing console
+Swim Official I
 
 ### 2008 – 2010 &#8212; Webmaster, Covenant Presbyterian Church
 

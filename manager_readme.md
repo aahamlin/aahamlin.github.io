@@ -16,48 +16,48 @@ Most importanly, I will listen to you and advocate for you.
 
 # What to expect of me
 
- * I strive to operate with integrity and empathy, at all times. If you ever feel I have failed at demonstrating these values, tell me.
+I strive to operate with integrity and empathy, at all times. If you ever feel I have failed at demonstrating these values, tell me.
 
- * I will praise your successes publicly. When I have concerns and critiques, I will share them privately. 
+I will praise your successes publicly. When I have concerns and critiques, I will share them privately. 
 
- * I will not micromanage you. You were hired because you are capable.
+I will not micromanage you. You were hired because you are capable.
 
- * I will listen. And, give the best advice or guidance I can.
+I will listen. And, give the best advice or guidance I can.
 
- * I will back you up and support you. I want you to innovate without fear. Being part of my team means, I will take responsibility for the decisions that do not work out. And celebrate your successes when they do.
+I will back you up and support you. I want you to innovate without fear. Being part of my team means, I will take responsibility for the decisions that do not work out. And celebrate your successes when they do.
 
- * I will stay involved, in design discussions and code reviews.
+I will stay involved, in design discussions and code reviews.
 
- * I will encourage you and also challenge you to grow, both technically and non-technically.
+I will encourage you and also challenge you to grow, both technically and non-technically.
 
- * If I don’t have an answer for you or am not at liberty to share it with you, I will tell you. As much as possible, I will try to find the answer and get back to you.
+If I don’t have an answer for you or am not at liberty to share it with you, I will tell you. As much as possible, I will try to find the answer and get back to you.
 
- * I take notes. Lots of notes. I will probably do this during our conversation, so I don’t forget an important detail. I am not ignoring you or working on something else. 
+I take notes. Lots of notes. I will probably do this during our conversation, so I don’t forget an important detail. I am not ignoring you or working on something else. 
 
 
 # What I expect from you
 
- * Operate with integrity and empathy, at all times.
+Operate with integrity and empathy, at all times.
 
- * Do your job well. Help your team mates do their job well. 
+Do your job well. Help your team mates do their job well. 
 
- * Speak up. Question assumptions. Recommend alternatives. 
+Speak up. Question assumptions. Recommend alternatives. 
 
- * Recognize & celebrate the great work your co-worker is doing.
+Recognize & celebrate the great work your co-worker is doing.
 
- * Take ownership. Hold yourself accountable. Be engaged.
+Take ownership. Hold yourself accountable. Be engaged.
 
- * When you notice a problem, I prefer it when you present me with a solution.
+When you notice a problem, I prefer it when you present me with a solution.
 
- * Share your thoughts and concerns so we can work together to improve results
+Share your thoughts and concerns so we can work together to improve results
 
- * Do not forsake your personal life for work. By coming to work rested and happy, you will be much more productive and engaged.
+Do not forsake your personal life for work. By coming to work rested and happy, you will be much more productive and engaged.
 
-And, you will make me smile when you:
+_And, you will make me smile when you:_
 
- * Continue to improve your skills. Learn a new language, technology, & practice new techniques. 
+Continue to improve your skills. Learn a new language, technology, & practice new techniques. 
 
- * Volunteer to lead a project, take on a new challenge
+Volunteer to lead a project, take on a new challenge
 
 
 # Communication
