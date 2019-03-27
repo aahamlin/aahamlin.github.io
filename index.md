@@ -21,7 +21,7 @@ Initial cycle time analysis showing that approx 25% of new features could be com
 Before making process changes sprint velocity was erratic, measuring the difference between our time estimates and actuals using mean absolute percentage error (MAPE), our sprint planning effectiveness yielded a **70% MAPE**. 
 ![Velocity before changes](/files/velocity-v1200.png)
 
-After the cycletime analysis and addressing specific bottlenecks, our ability to plan a sprint increased dramatically and yielded **29% MAPE**.
+After the cycletime analysis and addressing specific bottlenecks, our ability to plan a sprint increased dramatically and yielded a **29% MAPE**.
 ![Velocity after changes](/files/velocity-v1210.png)
 
 ### Feedback
