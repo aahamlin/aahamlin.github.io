@@ -48,6 +48,8 @@ header {
 }
 
 footer {
+    display: block;
+    position: relative;
     a { border-bottom: inherit; }
     a:hover { color: inherit; background-color: inherit; }
 }

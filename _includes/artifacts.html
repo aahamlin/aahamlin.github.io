@@ -1,3 +1,6 @@
+
+<strong>Contact info</strong>
+
 <ul class="fa-ul">
   {% if site.resume_url %}
   <li><i class="far fa-li fa-file-pdf"></i><a href="{{ site.resume_url }}">{{ site.resume_title | default: site.resume_url }}</a></li>
@@ -8,5 +11,5 @@
   {% if site.email_address %}
   <li><i class="fas fa-li fa-envelope"></i>{{ site.email_address }}</li>
   {% endif %}
-
 </ul>
+

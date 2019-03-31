@@ -7,8 +7,6 @@ Professionally, I have designed and implemented globalized enterprise systems on
 
 Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), containerization and CI/CD, as well as, development frameworks and methods, e.g. Agile/Kanban/Lean. 
 
-See my [resume](files/andrew_hamlin_resume.pdf) and [manager readme](manager_readme.md) for additional insights about me.
-
 # Moments
 
 After delivering SSO & RFID reader support and Software Development Kit (SDK) and validation tools for Linux thin clients (VDI) on ARM & Intel processors to partners including Dell Wyse, HP SmartZero, & Teradici.
@@ -26,3 +24,4 @@ At Microsoft, where I intervened and helped the team resolve virtualization and 
 > Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5"
 > _John Lammers, Senior Development Lead, Microsoft_
 
+See my [resume](files/andrew_hamlin_resume.pdf) and [manager readme](manager_readme.md) for additional insights about me.
