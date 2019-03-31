@@ -1,14 +1,23 @@
-title: aahamlin.github.io
-description: "\"The longest way 'round is the shortest way home.\" - Alexander MacLaren"
-google_analytics: 
+title: Andrew A Hamlin
+description: Software craftsmanship. Servant leadership. Trust. Respect. Integrity.
+google_analytics: 63523632
 show_downloads: false
-theme: jekyll-theme-minimal
+
+#theme: jekyll-theme-minimal
+theme: jekyll-theme-architect
+#theme: jekyll-theme-slate
+#theme: jekyll-theme-midnight
 
 plugins:
   - jekyll-mentions
 
-email: aahamlin[at]gmail.com
+github:
+  is_project_page: false
+  is_user_page: true
+
+email_address: aahamlin[at]gmail.com
 linkedin_url: https://www.linkedin.com/in/andrewahamlin
+linkedin_title: Profile
 resume_url: /files/andrew_hamlin_resume.pdf
-resume_title: Andrew A Hamlin Resume
-logo: /files/aahllc_logo.png
+resume_title: Resume
+

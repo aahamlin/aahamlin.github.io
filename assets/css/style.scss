@@ -1,51 +1,75 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import '{{ site.theme }}';
 
-.logo {
-    width: 64px;
-    display: block;
-    margin: 15px 0;
-}
-
-blockquote {
-    margin: 0 0 20px 5px;
-}
-
-blockquote p {
-    display: inline;
-    font-size: 0.9em;
-    font-style: normal;
-    line-height: 1.2;
-    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
+.center {
+    text-align: center;
 }
 
 body {
-     font-family: "Avenir Next", "Calibri", "Helvetica Neue", Helvetica, Arial, sans-serif;
-     font-size: 18px;
+    font-family: "Avenir Next", 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 20px;
+}
+
+a {
+    border-bottom: dashed 1px #275da1;
+}
+a:hover {
+    color: #275da1;
+    background-color: #d4dae9;
+}
+
+footer {
+    a { border-bottom: inherit; }
+    a:hover { color: inherit; background-color: inherit; }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Sans", "Calibri Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-weight: normal;
 }
 
-section h2, section h3 {
-    /*font-variant: all-small-caps;*/
-    font-weight: 500;
+#main-content {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.75em; }
+    h3 { font-size: 1.5em; }
+    h4 { font-size: 1.25em; }
+    h5 { font-size: 1.15em; }
+    h6 { font-size: 1em; }
 }
 
-strong {
-       font-weight: 400;
+aside#sidebar {
+    font-size: 16px;
+    line-height: 1.5;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 500;
+    }
+    h1 { font-size: 1.5em; }
+    h2, h3, h4, h5, h6 { font-size: 1em; }
+
+    strong {
+        font-weight: 500;
+    }
+    
+    ul.fa-ul {
+        margin-left: 1.5em;
+    }
 }
 
-footer ul.fa-ul {
-       font-size: 0.8em;
-       margin-left: 0;
+header {
+    background-image: linear-gradient(90deg, #2e7bcf, #275da1);
+
+    h2 {
+        color: #d4dae9;
+    }
 }
 
-footer .contactinfo {
-    text-align: center;
-    font-variant: all-small-caps;
+blockquote {
+    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
+    font-size: 1em;
+    margin-left: 20px;
+    padding: 5px 10px 0 20px;
+    border-color: #2e7bcf;
+    background-color: #d4dae9;
 }

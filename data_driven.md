@@ -2,10 +2,10 @@
 
 Here is some abridged analysis and results from data-driven process changes I have delivered.
 
-Using the cycletime command from my [qjira](https://github.com/aahamlin/jira_reporting_scripts) project, I analyzed the cycle time of delivering new features and found that only 25% of new features were completed in a 2-week sprint. 
+Using the cycletime command from my [qjira](https://github.com/aahamlin/jira_reporting_scripts) project, I analyzed the cycle time of delivering new features and found that only about 25% of new features were completed in a 2-week sprint. 
 ![Cycle time analysis](/files/cycletime.png)
 
-Further break down of the stages of the development workflow identified specific bottlenecks which where then addressed. One example is a stage before work was handed off to QA, where 25% of the items lingered for more than a week. After addressing this stage, we saw a 10% reduction in items left for longer than a week.
+Further break down of the stages of the development workflow identified specific bottlenecks which where then addressed. One example is a stage before work was handed off to QA, where 25% of the items lingered for more than a week. After addressing this stage, we saw about a 10% reduction in items waiting to be sent to QA for more than a week.
 ![Work complete times](/files/workcomplete.png)
 
 Before making these process changes sprint velocity was erratic. I measured the difference between our time estimates and actuals using mean absolute percentage error (MAPE). Our sprint planning effectiveness yielded a **70% MAPE**. 
