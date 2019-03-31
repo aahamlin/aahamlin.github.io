@@ -20,14 +20,38 @@ a:hover {
     background-color: #d4dae9;
 }
 
+strong {
+    font-weight: 500;
+}
+    
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+blockquote {
+    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
+    font-size: 1em;
+    margin-left: 20px;
+    padding: 5px 10px 0 20px;
+    border-color: #2e7bcf;
+    background-color: #d4dae9;
+}
+
+
+header {
+    background-image: linear-gradient(90deg, #2e7bcf, #275da1);
+
+    h2 {
+        color: #d4dae9;
+    }
+}
+
 footer {
     a { border-bottom: inherit; }
     a:hover { color: inherit; background-color: inherit; }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
 
 #main-content {
     h1 { font-size: 2em; }
@@ -48,28 +72,8 @@ aside#sidebar {
     h1 { font-size: 1.5em; }
     h2, h3, h4, h5, h6 { font-size: 1em; }
 
-    strong {
-        font-weight: 500;
-    }
-    
     ul.fa-ul {
         margin-left: 1.5em;
     }
 }
 
-header {
-    background-image: linear-gradient(90deg, #2e7bcf, #275da1);
-
-    h2 {
-        color: #d4dae9;
-    }
-}
-
-blockquote {
-    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
-    font-size: 1em;
-    margin-left: 20px;
-    padding: 5px 10px 0 20px;
-    border-color: #2e7bcf;
-    background-color: #d4dae9;
-}
