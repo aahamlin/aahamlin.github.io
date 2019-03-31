@@ -50,8 +50,13 @@ header {
 footer {
     display: block;
     position: relative;
-    a { border-bottom: inherit; }
-    a:hover { color: inherit; background-color: inherit; }
+    a {
+        border-bottom: inherit;
+        &:hover {
+            color: inherit;
+            background-color: inherit;
+        }
+    }
 }
 
 
@@ -79,3 +84,11 @@ aside#sidebar {
     }
 }
 
+.navlink {
+    float: right;
+    font-size: x-small;
+    border: inherit;
+    &:hover {
+        background-color: inherit;
+    }
+}
