@@ -14,10 +14,10 @@ body {
 
 a {
     border-bottom: dashed 1px #275da1;
-}
-a:hover {
-    color: #275da1;
-    background-color: #d4dae9;
+    &:hover {
+        color: #275da1;
+        background-color: #d4dae9;
+    }
 }
 
 strong {
@@ -50,15 +50,11 @@ header {
 footer {
     display: block;
     position: relative;
-    a {
-        border-bottom: inherit;
-        &:hover {
-            color: inherit;
-            background-color: inherit;
-        }
-    }
 }
 
+#content-wrapper {
+    padding-top: 1em;
+}
 
 #main-content {
     h1 { font-size: 2em; }
@@ -84,11 +80,35 @@ aside#sidebar {
     }
 }
 
-.navlink {
+.small-right-link {
     float: right;
     font-size: x-small;
     border: inherit;
     &:hover {
         background-color: inherit;
+    }
+}
+
+ul.menu {
+    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
+    font-size: 0.75em;
+    line-height: 1.1;
+    padding-left: 0;
+    
+    li {
+        display: inline;
+        &.active a {
+            color: inherit;
+        }
+    }
+}
+
+footer, ul.menu li {
+    a {
+        border-bottom: inherit;
+        &:hover {
+            color: inherit;
+            background-color: inherit;
+        }
     }
 }

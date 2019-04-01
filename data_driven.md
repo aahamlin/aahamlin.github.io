@@ -1,3 +1,15 @@
+---
+
+breadcrumbs:
+
+- title: Home
+  url: /
+
+- title: Data-driven changes
+  url: /data_driven.html
+
+---
+
 # Example of data-driven changes
 
 Here is some abridged analysis and results from data-driven process changes I have delivered.

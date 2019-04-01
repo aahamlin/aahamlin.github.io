@@ -1,3 +1,11 @@
+---
+
+breadcrumbs:
+
+- title: Home
+  url: /
+  
+---
 
 # A little about me
 

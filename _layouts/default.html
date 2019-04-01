@@ -44,15 +44,14 @@
         {% endif %}
       </div>
     </header>
-
+    
     <div id="content-wrapper">
       <div class="inner clearfix">
-        <a name="top"></a>
-        
         <section id="main-content">
-        
+          <a name="top"></a>
+          {% include nav.html %}
           {{ content }}
-          <a href="#top" class="navlink">Back to top</a>
+          <a href="#top" class="small-right-link">Back to top</a>
         </section>
 
         <aside id="sidebar">

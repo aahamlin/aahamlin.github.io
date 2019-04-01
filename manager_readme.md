@@ -1,3 +1,15 @@
+---
+
+breadcrumbs:
+
+- title: Home
+  url: /
+
+- title: Manager readme
+  url: /manager_readme.html
+
+---
+
 # How I view my role
 
 My role is to enable the success and health of the team and product(s).
