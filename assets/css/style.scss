@@ -12,14 +12,6 @@ body {
     font-size: 20px;
 }
 
-a {
-    border-bottom: dashed 1px #275da1;
-    &:hover {
-        color: #275da1;
-        background-color: #d4dae9;
-    }
-}
-
 strong {
     font-weight: 500;
 }
@@ -40,7 +32,7 @@ blockquote {
 
 
 header {
-    background-image: linear-gradient(90deg, #2e7bcf, #275da1);
+    background-image: linear-gradient(145deg, #2e7bcf, #275da1);
 
     h2 {
         color: #d4dae9;
@@ -54,60 +46,78 @@ footer {
 
 #content-wrapper {
     padding-top: 1em;
-}
 
-#main-content {
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.75em; }
-    h3 { font-size: 1.5em; }
-    h4 { font-size: 1.25em; }
-    h5 { font-size: 1.15em; }
-    h6 { font-size: 1em; }
-}
 
-aside#sidebar {
-    font-size: 16px;
-    line-height: 1.5;
-
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: 500;
-    }
-    h1 { font-size: 1.5em; }
-    h2, h3, h4, h5, h6 { font-size: 1em; }
-
-    ul.fa-ul {
-        margin-left: 1.5em;
-    }
-}
-
-.small-right-link {
-    font-size: x-small;
-    border: inherit;
-    &:hover {
-        background-color: inherit;
-    }
-}
-
-ul.menu {
-    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
-    font-size: 0.75em;
-    line-height: 1.1;
-    padding-left: 0;
-    
-    li {
-        display: inline;
-        &.active a {
-            color: inherit;
+    a {
+        border-bottom: dashed 1px #275da1;
+        &:hover {
+            color: #275da1;
+            background-color: #d4dae9;
         }
     }
-}
 
-footer, ul.menu li {
-    a {
-        border-bottom: inherit;
+    #main-content {
+        h1, h2, h3, h4, h5, h6 {
+            text-indent: 0;
+            &::before {
+                padding-right: 0;
+                margin-left: 0;
+                content: "";
+                color: inherit;
+            }
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.6em; }
+        h3 { font-size: 1.45em; }
+        h4 { font-size: 1.25em; }
+        h5 { font-size: 1.15em; }
+        h6 { font-size: 1em; }
+    }
+
+    aside#sidebar {
+        font-size: 16px;
+        line-height: 1.5;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 500;
+        }
+        h1 { font-size: 1.5em; }
+        h2, h3, h4, h5, h6 { font-size: 1em; }
+        
+        ul.fa-ul {
+            margin-left: 1.5em;
+        }
+    }
+
+    .small-anchor-link {
+        font-size: x-small;
+        border: inherit;
         &:hover {
-            color: inherit;
             background-color: inherit;
+        }
+    }
+
+    ul.menu {
+        font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
+        font-size: 0.75em;
+        line-height: 1.1;
+        padding-left: 0;
+    
+        li {
+            display: inline;
+            &.active a {
+                color: inherit;
+            }
+        }
+    }
+
+    footer, ul.menu li {
+        a {
+            border-bottom: inherit;
+            &:hover {
+                color: inherit;
+                background-color: inherit;
+            }
         }
     }
 }
