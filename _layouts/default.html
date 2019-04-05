@@ -49,17 +49,17 @@
       <div class="inner clearfix">
         <section id="main-content">
           <a name="top"></a>
-          {% include nav.html %}
+          {% include breadcrumbs.html %}
           {{ content }}
           <a href="#top" class="small-anchor-link">Back to top</a>
         </section>
 
         <aside id="sidebar">
 
+          {% include nav.html %}
+          
           {% include projects.html %}
 
-          {% include skills.html %}
-          
           {% if site.show_downloads %}
           <a href="{{ site.github.zip_url }}" class="button">
             <small>Download</small>

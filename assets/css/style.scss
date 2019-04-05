@@ -56,6 +56,16 @@ footer {
         }
     }
 
+    ul.menu {
+        list-style: none;
+        padding-left: 0;
+        li {
+            &.active a {
+                color: inherit;
+            }
+        }
+    }
+
     #main-content {
         h1, h2, h3, h4, h5, h6 {
             text-indent: 0;
@@ -72,6 +82,15 @@ footer {
         h4 { font-size: 1.25em; }
         h5 { font-size: 1.15em; }
         h6 { font-size: 1em; }
+
+        ul.menu {
+            font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
+            font-size: 0.75em;
+            line-height: 1.1;
+            li {
+                display: inline;
+            }
+        }
     }
 
     aside#sidebar {
@@ -94,20 +113,6 @@ footer {
         border: inherit;
         &:hover {
             background-color: inherit;
-        }
-    }
-
-    ul.menu {
-        font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
-        font-size: 0.75em;
-        line-height: 1.1;
-        padding-left: 0;
-    
-        li {
-            display: inline;
-            &.active a {
-                color: inherit;
-            }
         }
     }
 

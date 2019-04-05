@@ -1,6 +1,9 @@
 
+<h1>{{ site.data.nav.pages_list_title }}</h1>
 <ul class="menu">
-  {% for item in page.breadcrumbs %}
-  <li class="{% if item.url == page.url %}active{% endif %}"><a {% if item.url != page.url %}href="{{ item.url }}"{% endif %}>{{ item.title }}</a></li>{% unless forloop.last == true %} &gt; {% endunless %}
+  {% for item in site.data.nav.pages %}
+  <li class="{% if item.url == page.url %}active{% endif %}"a><a {% if item.url != page.url %}href="{{ item.url }}"{% endif %}>{{ item.title }}</a></li>
   {% endfor %}
 </ul>
+
+  
