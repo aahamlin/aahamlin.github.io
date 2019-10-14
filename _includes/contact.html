@@ -1,7 +1,7 @@
 
 <h1>{{ site.data.contact.page_title }}</h1>
 
-<ul class="fa-ul">
+<ul class="menu fa-ul">
   {% if site.data.contact.resume_url %}
   <li><i class="far fa-li fa-file-pdf"></i><a href="{{ site.data.contact.resume_url }}">{{ site.data.contact.resume_title | default: site.data.contact.resume_url }}</a></li>
   {% endif %}
