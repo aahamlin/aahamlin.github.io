@@ -6,7 +6,7 @@
   <li><i class="far fa-li fa-file-pdf"></i><a href="{{ site.data.contact.resume_url }}">{{ site.data.contact.resume_title | default: site.data.contact.resume_url }}</a></li>
   {% endif %}
   {% if site.linkedin_url %}
-  <li><i class="fab fa-li fa-linkedin"></i><a href="{{ site.data.contact.linkedin_url }}">{{ site.data.contact.linkedin_title |s site.data.contact.linkedin_url }}</a></li>
+  <li><i class="fab fa-li fa-linkedin"></i><a href="{{ site.data.contact.linkedin_url }}">{{ site.data.contact.linkedin_title | site.data.contact.linkedin_url }}</a></li>
   {% endif %}
   {% if site.data.contact.email_address %}
   <li><i class="fas fa-li fa-envelope"></i>{{ site.data.contact.email_address }}</li>
