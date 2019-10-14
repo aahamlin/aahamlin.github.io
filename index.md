@@ -1,19 +1,15 @@
 ---
-
-breadcrumbs:
-
-- title: Home
-  url: /
-  
 ---
 
 # A little about me
 
-As an engineering leader, I have managed globally distributed teams, delivered [data-driven SDLC changes](data_driven.md), and successfully led turn-arounds of under-performing teams. I work to build highly engaged, productive teams who deliver well-crafted products. My teams have built industry-leading solutions, recognized by Gartner and KLAS.
+As an engineering leader, I have managed globally distributed teams, delivered data-driven SDLC changes, and successfully led turn-arounds of under-performing teams. I work to build highly engaged, productive teams who deliver well-crafted products. My teams have built industry-leading solutions, recognized by Gartner and KLAS.
 
 Professionally, I have designed and implemented globalized enterprise systems on Windows and Linux platforms, using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices.
 
 Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), containerization and CI/CD, as well as, development frameworks and methods, e.g. Agile/Kanban/Lean. 
+
+See [manager readme](manager_readme.md) for additional insights about working with me.
 
 # Moments
 
@@ -32,4 +28,3 @@ At Microsoft, where I intervened and helped the team resolve virtualization and 
 > Thanks for jumping in and driving the CentOS perf evaluation, [packaging, and build work]. You've had a major impact on V5"
 > _John Lammers, Senior Development Lead, Microsoft_
 
-See my [resume](files/andrew_hamlin_resume.pdf) and [manager readme](manager_readme.md) for additional insights about me.

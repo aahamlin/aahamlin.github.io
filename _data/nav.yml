@@ -4,9 +4,8 @@ pages:
 - title: Home
   url: /
 
-- title: Readme
+- title: Manager Readme
   url: /manager_readme.html
 
-- title: Skills
-  url: /skills.html
-  
+#- title: Skills
+#  url: /skills.html
