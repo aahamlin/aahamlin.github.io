@@ -7,7 +7,7 @@ As an engineering leader, I have managed globally distributed teams, delivered d
 
 Professionally, I have designed and implemented globalized enterprise systems on Windows and Linux platforms, using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices.
 
-Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), containerization and CI/CD, as well as, development frameworks and methods, e.g. Agile/Kanban/Lean. 
+Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), orchestration, containers, as well as, development frameworks and methods, e.g. Agile/Kanban/Lean. 
 
 See my [manager readme](manager_readme.md) for more about working with me.
 
