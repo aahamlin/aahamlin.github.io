@@ -2,14 +2,16 @@
 ---
 
 @import '{{ site.theme }}';
+@import url("https://fonts.googleapis.com/css?family=Exo|Cutive+Mono|Karma");
+
 
 .center {
     text-align: center;
 }
 
 body {
-    font-family: "Avenir Next", 'Helvetica Neue', Helvetica, Arial, serif;
-    font-size: 20px;
+    font-family: Karma, 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 1.33em;
 }
 
 strong {
@@ -18,22 +20,26 @@ strong {
     
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+    font-family: 'Exo', 'Helvetica Neue', Helvetica, Arial, serif;
+    line-height: 1.33em;
+    /*font-weight: normal;*/
 }
 
 blockquote {
-    font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
-    font-size: 1em;
+    font-family: "Cutive Mono", "Consolas", "Courier New", Courier, monospace;
+    font-size: 0.8em;
     margin-left: 20px;
-    padding: 5px 10px 0 20px;
-    border-color: #2e7bcf;
-    background-color: #d4dae9;
+    padding: 8px 10px 1px 20px;
+    border-color: #313131;
+    background-color: #515151;
+    background-image: linear-gradient(150deg, #515151, #313131);
+    color: #f1f1f1;
 }
 
 
 header {
-    background-image: linear-gradient(145deg, #2e7bcf, #275da1);
-
+    background-image: linear-gradient(150deg, #515151, #313131);
+    margin-top: 0.67em;
     h2 {
         color: #d4dae9;
     }
@@ -44,21 +50,26 @@ footer {
     position: relative;
 }
 
+a.button {
+    font-family: 'Exo', 'Helvetica Neue', Helvetica, Arial, serif;
+}
+
 #content-wrapper {
     padding-top: 1em;
-
-
     a {
-        border-bottom: dashed 1px #275da1;
+        color: #ca3d47;
+        border-bottom: dashed 1px #ca3d47;
         &:hover {
-            color: #275da1;
+            color: #ca3e47;
             background-color: #d4dae9;
         }
     }
 
     ul.menu {
+        font-family: "Cutive Mono", "Consolas", "Courier New", Courier, monospace;
         list-style: none;
         padding-left: 0;
+        font-weight: 300;
         li {
             &.active a {
                 color: inherit;
@@ -68,7 +79,9 @@ footer {
 
     #main-content {
         h1, h2, h3, h4, h5, h6 {
+            font-family: 'Karma', 'Helvetica Neue', Helvetica, Arial, serif;
             text-indent: 0;
+            padding: 3px 0 6px 0;
             &::before {
                 padding-right: 0;
                 margin-left: 0;
@@ -77,16 +90,13 @@ footer {
             }
         }
         h1 { font-size: 2em; }
-        h2 { font-size: 1.6em; }
-        h3 { font-size: 1.45em; }
+        h2 { font-size: 1.66em; }
+        h3 { font-size: 1.47em; }
         h4 { font-size: 1.25em; }
-        h5 { font-size: 1.15em; }
+        h5 { font-size: 1.12em; }
         h6 { font-size: 1em; }
 
         ul.menu {
-            font-family: "Inconsolata", "Consolas", "Courier New", Courier, monospace;
-            font-size: 0.75em;
-            line-height: 1.1;
             li {
                 display: inline;
             }
@@ -94,14 +104,14 @@ footer {
     }
 
     aside#sidebar {
-        font-size: 16px;
-        line-height: 1.5;
+        font-size: 0.8em;
+        line-height: 1.33em;
 
         h1, h2, h3, h4, h5, h6 {
-            font-weight: 500;
+            font-family: 'Karma', 'Helvetica Neue', Helvetica, Arial, serif;
+            font-weight: 700;
+            text-indent: 0;
         }
-        h1 { font-size: 1.5em; }
-        h2, h3, h4, h5, h6 { font-size: 1em; }
         
         ul.fa-ul {
             margin-left: 1.5em;
@@ -109,7 +119,7 @@ footer {
     }
 
     .small-anchor-link {
-        font-size: x-small;
+        font-size: medium;
         border: inherit;
         &:hover {
             background-color: inherit;

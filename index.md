@@ -9,7 +9,7 @@ Professionally, I have designed and implemented globalized enterprise systems on
 
 Personally, I enjoy following developments in web development, such as [Elm](https://www.elm-lang.org), containerization and CI/CD, as well as, development frameworks and methods, e.g. Agile/Kanban/Lean. 
 
-See [manager readme](manager_readme.md) for additional insights about working with me.
+See my [manager readme](manager_readme.md) for more about working with me.
 
 # Moments
 
