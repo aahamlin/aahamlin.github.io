@@ -22,7 +22,6 @@ strong {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Exo', 'Helvetica Neue', Helvetica, Arial, serif;
     line-height: 1.33em;
-    /*font-weight: normal;*/
 }
 
 blockquote {
@@ -42,10 +41,11 @@ header {
     margin-top: 0.67em;
     h1 {
         color: f1f1f1;
+        width: 100%;
     }
     h2, h3, h4, h5, h6 {
         color: #e1e1e1;
-    }        
+    }
 }
 
 footer {
