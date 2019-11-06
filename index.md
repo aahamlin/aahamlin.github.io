@@ -5,11 +5,12 @@
 
 As an engineering leader, I have managed globally distributed teams, delivered data-driven SDLC changes, and successfully led turn-arounds of under-performing teams. I work to build highly engaged, productive teams who deliver well-crafted products. My teams have built industry-leading solutions, recognized by Gartner and KLAS.
 
-Professionally, I have designed and implemented globalized, distributed enterprise systems on Windows and Linux platforms including networking, fault-tolerance, security, scripting, service APIs (REST, RPC, SOAP, etc), user interfaces (web, desktop GUI), using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices.
+Professionally, I have designed and implemented globalized, distributed enterprise systems on Windows and Linux platforms including networking, fault-tolerance, security, scripting, service APIs (REST, RPC, SOAP, etc), user interfaces (web, desktop GUI), using a Secure Software Development Lifecycle (SSDLC), trained and mentored teams on continuous delivery, test automation and test-driven development (TDD) practices. See my [manager readme](manager_readme.md) for more about working with me.
 
-Personally, I enjoy following developments in web development, such as Swift, Dart, [Elm](https://www.elm-lang.org), orchestration, containers, new/various development frameworks and cloud services, and engineering process, e.g. Agile/Kanban/Lean. 
+Personally, I enjoy exploring new languages and technologies, such as Swift, Dart, [Elm](https://www.elm-lang.org), orchestration (Ansible/Kubernetes), containers (Docker), new/various development frameworks and cloud services, and engineering process, e.g. Agile/Kanban/Lean.
 
-See my [manager readme](manager_readme.md) for more about working with me.
+I also feel strongly about volunteering in my community and spent many years as a YMCA Swim Official and brought "[Hour of code](https://hourofcode.com/)" into the local elementary school, and facilitated an introduction to programming elective at a local High school.
+
 
 # Memorable moments
 
