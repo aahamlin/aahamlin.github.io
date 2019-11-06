@@ -9,7 +9,7 @@ Professionally, I have designed and implemented globalized, distributed enterpri
 
 Personally, I enjoy exploring new languages and technologies, such as Swift, Dart, [Elm](https://www.elm-lang.org), orchestration (Ansible/Kubernetes), containers (Docker), new/various development frameworks and cloud services, and engineering process, e.g. Agile/Kanban/Lean.
 
-I also feel strongly about volunteering in my community and spent many years as a YMCA Swim Official and brought "[Hour of code](https://hourofcode.com/)" into the local elementary school, and facilitated an introduction to programming elective at a local High school.
+I also feel strongly about volunteering in my community and spent many years as a YMCA Swim Official and brought "[Hour of code](https://hourofcode.com/)" into the local elementary school, and facilitated an "Introductory programming" elective at a local High school.
 
 
 # Memorable moments
