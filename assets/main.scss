@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Karma");
 
 .site-header {
-    border-top-color: #0036FF;
+    border-top-color: #0099FF;
     border-bottom-color: #BCCAFE;
 }
 
@@ -34,4 +34,9 @@
 
 .contact-list.fa-ul {
     margin-left: 0;
+
+    /* select li after 1st */
+    li ~ li {
+	margin-left: 1.5em;
+    }
 }
