@@ -1,10 +1,12 @@
-title: Andrew A Hamlin
-description: Software craftsmanship. Servant leadership. Trust. Respect. Integrity.
+title: "O-blog-atory"
+description: Notes on Books, Music, Gentoo Linux, and Skateboards
 google_analytics: UA-63523632-2
 show_downloads: false
+show_excerpts: true
 
+theme: minima
 #theme: jekyll-theme-minimal
-theme: jekyll-theme-architect
+#theme: jekyll-theme-architect
 #theme: jekyll-theme-slate
 #theme: jekyll-theme-midnight
 
@@ -13,5 +15,17 @@ plugins:
 
 github:
   is_project_page: false
-  is_user_page: false
+  is_user_page: true
 
+author: Andrew Hamlin
+email: aahamlin@gmail.com
+
+header_pages:
+  - index.md
+  - bio.md
+  - manager_readme.md
+
+github_username: aahamlin
+instagram_username: andrewhamlin
+bitbucket_username: andrew_hamlin
+twitter_username: ahamlinSWeng

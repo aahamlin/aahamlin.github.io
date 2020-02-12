@@ -1,8 +1,0 @@
-
-<ul class="menu">
-  {% for item in site.data.nav.pages %}
-  {% if forloop.first == true or item.url == page.url %}
-  <li class="{% if item.url == page.url %}active{% endif %}"><a {% if item.url != page.url %}href="{{ item.url }}"{% endif %}>{{ item.title }}</a></li>{% if forloop.first == true and item.url != page.url %} &gt; {% endif %}
-  {% endif %}
-  {% endfor %}
-</ul>

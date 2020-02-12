@@ -1,5 +1,9 @@
 ---
+layout: page
+title: Readme
 ---
+
+> TODO: Edit this down to the essentials.
 
 # How I view my role
 
@@ -113,7 +117,7 @@ Giving feedback should meet the following criteria:
 
 As an introvert, I tend to keep quieter in larger settings. Typically, I will provide feedback after a short period of reflection.
 
-The response, “just tell me what you want me to do”, is one of my least favorite. Command and control environments are not healthy nor effective.
+The response, “just tell me what you want me to do”, is one of my least favorite.
 
-I dislike arrogance. The loudest, most confident voice in the room does _not_ always (or even usually) have the best answer.
+I dislike arrogance.
 

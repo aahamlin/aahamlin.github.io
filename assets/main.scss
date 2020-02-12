@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import '{{ site.theme }}';
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Karma");
+
+.site-header {
+    border-top-color: #0036FF;
+    border-bottom-color: #BCCAFE;
+}
+
+.site-footer {
+    border-top-color: #BCCAFE;
+}
+
+.page-content {
+    font-size: 1.33em;
+    font-family: Karma, 'Helvetica Neue', Helvetica, Arial, serif;
+
+    blockquote {
+	font-family: "Cutive Mono", "Consolas", "Courier New", Courier, monospace;
+    }
+}
+
+.img-profile {
+    float: right;
+    margin: 10px;
+    width: 33%;
+    height: auto;
+    min-width: 200px;
+    border-radius: 12%;
+}

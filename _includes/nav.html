@@ -1,9 +1,0 @@
-
-<h1>{{ site.data.nav.pages_list_title }}</h1>
-<ul class="menu">
-  {% for item in site.data.nav.pages %}
-  <li class="{% if item.url == page.url %}active{% endif %}"a><a {% if item.url != page.url %}href="{{ item.url }}"{% endif %}>{{ item.title }}</a></li>
-  {% endfor %}
-</ul>
-
-  
