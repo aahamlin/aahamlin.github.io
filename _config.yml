@@ -5,10 +5,6 @@ show_downloads: false
 show_excerpts: true
 
 theme: minima
-#theme: jekyll-theme-minimal
-#theme: jekyll-theme-architect
-#theme: jekyll-theme-slate
-#theme: jekyll-theme-midnight
 
 plugins:
   - jekyll-mentions
@@ -29,3 +25,4 @@ github_username: aahamlin
 instagram_username: andrewhamlin
 bitbucket_username: andrew_hamlin
 twitter_username: ahamlinSWeng
+linkedin_username: andrewahamlin
