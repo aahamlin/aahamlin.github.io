@@ -19,7 +19,7 @@ Some of the ways I contribute toward this goal:
  * Resolve conflicts, either as advisor or mediator.
  * (Brew the coffee, order food, sweep the floor)
 
-Most importanly, I will listen to you and advocate for you.
+Most importantly, I will listen to you and advocate for you.
 
 # What to expect of me
 
