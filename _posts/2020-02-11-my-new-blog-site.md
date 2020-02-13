@@ -8,7 +8,7 @@ Everywhere I look there are messages to "brand" ourselves to achieve success. An
 
 The whole idea of "branding" myself, in terms of software product development is built on the premise that I have some ground-breaking new theory or exceptional capability that before me did not exist. I am uncomfortable with, and probably lack, the predilection for, the narcissism required for such a proclamation. Though I certainly have my own unique perspective on the world and, specifically, what makes for great software development practices and team cultures; these are generally responsive to the situations I am confronting on a particular day.
 
-When considering how to refresh this site, I asked myself, do I really have anything unique to add to the world of blogs and books and articles? And my answer is, eh, not really.
+When considering how to refresh this site, I asked myself, do I really have anything unique to add to the world of blogs and books and articles? And my answer is, eh, not really. I'll just be regurgitating other peoples words rather than adding any true value.
 
 If I am not going to try to impress the software development world with my technical and leadership acumen, then what the heck is the point? Is there any reason to write a blog at all? What do I feel comfortable writing about publicly? Well, I love to read, collect & listen to music, write and record music on Gentoo Linux. And having a place to organize my notes about all these topics will be useful... for myself, and maybe for you too.
 

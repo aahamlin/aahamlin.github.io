@@ -15,9 +15,16 @@
 }
 
 .page-content {
-    font-size: 1.33em;
+    font-size: 1.3em;
     font-family: Karma, 'Helvetica Neue', Helvetica, Arial, serif;
 
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.2em; }
+    h3 { font-size: 1.15em; }
+    h4 { font-size: 1.0em; }
+    h5 { font-size: 0.8em; }
+    h6 { font-size: 0.65em; }
+    
     blockquote {
 	font-family: "Cutive Mono", "Consolas", "Courier New", Courier, monospace;
     }

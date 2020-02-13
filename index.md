@@ -7,7 +7,8 @@ title: Home
 
 ## Other Small Projects
 
-[Jira Query Tool](https://github.com/aahamlin/jira_reporting_scripts)
-[Gentoo Linux Overlay](https://bitbucket.org/andrew_hamlin/aahamlin-overlay/src/master/)
-[Emacs 24+ Configuration](https://bitbucket.org/andrew_hamlin/emacs.d/src/master/)
+* [Jira Query Tool](https://github.com/aahamlin/jira_reporting_scripts)
+* [Gentoo Linux Overlay](https://bitbucket.org/andrew_hamlin/aahamlin-overlay/src/master/)
+* [Emacs 24+ Configuration](https://bitbucket.org/andrew_hamlin/emacs.d/src/master/)
+
 
