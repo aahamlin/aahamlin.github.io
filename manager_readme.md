@@ -3,7 +3,7 @@ layout: page
 title: Readme
 ---
 
-> TODO: Edit this down to the essentials.
+> TODO: Edit content down to the essentials. Be simple & concise.
 
 # How I view my role
 
@@ -117,7 +117,7 @@ Giving feedback should meet the following criteria:
 
 As an introvert, I tend to keep quieter in larger settings. Typically, I will provide feedback after a short period of reflection.
 
-The response, “just tell me what you want me to do”, is one of my least favorite.
+“Just tell me what you want me to do”, is one of my least favorite responses to hear from someone.
 
 I dislike arrogance.
 
