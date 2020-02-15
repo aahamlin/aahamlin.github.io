@@ -5,13 +5,17 @@
 @import '{{ site.theme }}';
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Karma");
 
+$theme-light-color: #BCCAFE;
+$theme-dark-color: #1756a9;
+
 .site-header {
-    border-top-color: #0099FF;
-    border-bottom-color: #BCCAFE;
+    border-top-width: 1.0em;
+    border-top-color: $theme-dark-color;
+    border-bottom-color: $theme-light-color;
 }
 
 .site-footer {
-    border-top-color: #BCCAFE;
+    border-top-color: $theme-light-color;
 }
 
 .page-content {
@@ -28,15 +32,28 @@
     blockquote {
 	font-family: "Cutive Mono", "Consolas", "Courier New", Courier, monospace;
     }
+
+    ul li.external-link {
+	list-style-type: none;
+	margin-left: -30px;
+	color: $theme-dark-color;
+    }
+
 }
 
-.img-profile {
-    float: right;
-    margin: 10px;
+.img-responsive-33 {
     width: 33%;
     height: auto;
     min-width: 200px;
-    border-radius: 12%;
+}
+
+.pull-right {
+    float: right;
+}
+
+.img-profile {
+    margin: 10px;
+    border-radius: 25%;
 }
 
 .contact-list.fa-ul {

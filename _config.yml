@@ -1,13 +1,10 @@
-title: "O-blog-atory"
-description: Notes on Books, Music, Gentoo Linux, and Skateboarding
+title: "Oblogatory"
+description: My obligatory blog. Notes on books, music, Gentoo, and skating.
 google_analytics: UA-63523632-2
 show_downloads: false
 show_excerpts: true
 
 theme: minima
-
-plugins:
-  - jekyll-mentions
 
 github:
   is_project_page: false
@@ -18,11 +15,11 @@ email: aahamlin@gmail.com
 
 header_pages:
   - index.md
-  - bio.md
   - manager_readme.md
-
+  - about.md
+  
 github_username: aahamlin
 instagram_username: andrewhamlin
-bitbucket_username: andrew_hamlin
+# bitbucket_username: andrew_hamlin
 twitter_username: ahamlinSWeng
 linkedin_username: andrewahamlin
