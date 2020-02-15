@@ -36,9 +36,13 @@ $theme-dark-color: #1756a9;
     ul li.external-link {
 	list-style-type: none;
 	margin-left: -30px;
-	color: $theme-dark-color;
     }
 
+    .external-link-suffix {
+	font-size: 0.75em;
+	color: $theme-dark-color;
+	vertical-align: text-top;
+    }
 }
 
 .img-responsive-33 {
