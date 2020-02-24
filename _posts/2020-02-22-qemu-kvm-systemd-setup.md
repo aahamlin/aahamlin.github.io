@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting qemu on Gentoo with systemd
+title: Setting up qemu/kvm on Gentoo with systemd
 categories: [gentoo]
 tags: [gentoo, linux]
 ---
