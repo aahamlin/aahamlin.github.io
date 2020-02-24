@@ -3,9 +3,10 @@ layout: post
 title: Setting up qemu/kvm on Gentoo with systemd
 categories: [gentoo]
 tags: [gentoo, linux]
+excerpt_separator: <!--more-->
 ---
 
-Recently, I reinstalled my [Gentoo Linux](https://www.gentoo.org) system from scratch; rebuilding it from the ground up. The reason for embarking on this is a bigger life story, but the short version is that this computer is my music production workstation \(which makes it seem waaaay more serious and professional than it is\) and due to moving between CT and TX and CT again over the past few years, the computer had been in a box for nearly 3 years. Upgrading a system 3 years out-of-date, that has already grown and expanded haphazardly since 2010-ish, was a huge time sink I decided to avoid.
+Recently, I reinstalled my [Gentoo Linux](https://www.gentoo.org) system from scratch; rebuilding it from the ground up. The reason for embarking on this is a bigger life story, but the short version is that this computer is my music production workstation \(which makes it seem waaaay more serious and professional than it is\)  <!--more-->and due to moving between CT and TX and CT again over the past few years, the computer had been in a box for nearly 3 years. Upgrading a system 3 years out-of-date, that has grown and expanded haphazardly/organically as I have experimented with new projects since 2010-ish, was a huge time sink I decided to avoid.
 
 Now this computer has two purposes, the primary being for digital audio recording and mastering. A passion I have had since I was 8 or 9 years old. My first career, though short-lived, was as an audio engineer, producer and studio owner. Though I have been a software developer since my late twenties, I thoroughly enjoy having a home studio. The secondary purpose is for experimenting with new languages and tools. Having just rebuilt this machine, I haven't yet installed a hypervisor and this week I am going to be researching [Open Source Mano \(OSM\)](https://osm.etsi.org/) and [Charmed OSM](https://charmed-osm.com/), in order to do that I will be following the [Getting started with Charmed OSM](https://jaas.ai/tutorials/charmed-osm-get-started#1-introduction) tutorial from [Canonical](https://canonical.com/). But, first, I am installing QEMU and KVM onto my Gentoo box.
 
