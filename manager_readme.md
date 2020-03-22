@@ -3,87 +3,69 @@ layout: page
 title: Readme
 ---
 
-> TODO: Edit content down to the essentials. Be simple & concise.
-
 # How I view my role
 
-My role is to enable the success and health of the team and product(s).
+My role is to build a healthy team environment; where the team has:
+ * trust, 
+ * (safe) conflict, 
+ * commitment (to the team\'s goals), 
+ * accountability, and 
+ * produces sustainable results
 
 Some of the ways I contribute toward this goal:
- * Get to know you and the team, gain mutual understanding, build trust
+ * Get to know you and the team, gain mutual understanding & trust
  * Collect and share business context for the team to prioritize, set goals and make decisions
  * Remove roadblocks
  * Reduce noise & distractions, such as pushing back on unrealistic expectations
  * Encourage your growth 
- * Foster teamwork 
  * Resolve conflicts, either as advisor or mediator.
- * (Brew the coffee, order food, sweep the floor)
+ * (Also happy to brew the coffee, order food, sweep the floor, ... whatever it takes)
 
-Most importantly, I will listen to you and advocate for you.
 
 # What to expect of me
 
-I strive to operate with integrity and empathy, at all times. If you ever feel I have failed at demonstrating these values, tell me.
-
-I will praise your successes publicly. When I have concerns and critiques, I will share them privately. 
-
-I will not micromanage you. You were hired because you are capable.
-
-I will listen. And, give the best advice or guidance I can.
-
-I will back you up and support you. I want you to innovate without fear. Being part of my team means, I will take responsibility for the decisions that do not work out. And celebrate your successes when they do.
-
-I will stay involved, in design discussions and code reviews.
-
-I will encourage you and also challenge you to grow, both technically and non-technically.
-
-If I don’t have an answer for you or am not at liberty to share it with you, I will tell you. As much as possible, I will try to find the answer and get back to you.
-
-I take notes. Lots of notes. I will probably do this during our conversation, so I don’t forget an important detail. I am not ignoring you or working on something else. 
-
+ * I will praise your successes publicly. When I have concerns and critiques, I will share them privately. 
+ * I will not micromanage you. You were hired because you are capable.
+ * I will listen. And, give the best advice or guidance I can.
+ * I will back you up and support you. I want you to innovate without fear. Being part of my team means, I will take responsibility for the decisions that do not work out. And celebrate and share your successes when they do.
+ * I will stay involved, in design discussions and code reviews.
+ * I will encourage you and also challenge you to grow, both technically and non-technically.
+ * If I don’t have an answer for you or am not at liberty to share it with you, I will tell you. As much as possible, I will try to find the answer and get back to you.
 
 # What I expect from you
 
-Operate with integrity and empathy, at all times.
+ * Operate with integrity and empathy, at all times.
+ * Do your job well. Help your team mates do their job well. 
+ * Speak up. Question assumptions. Recommend alternatives. Ask for help.
+ * Recognize & celebrate the great work your co-worker is doing.
+ * Take ownership. Hold yourself accountable. Be engaged.
+ * When you notice a problem, fix it or provide a solution.
+ * Share your thoughts and concerns so we can work together to improve results
+ * Volunteer to learn/do something new
 
-Do your job well. Help your team mates do their job well. 
-
-Speak up. Question assumptions. Recommend alternatives. 
-
-Recognize & celebrate the great work your co-worker is doing.
-
-Take ownership. Hold yourself accountable. Be engaged.
-
-When you notice a problem, I prefer it when you present me with a solution.
-
-Share your thoughts and concerns so we can work together to improve results
-
-Do not forsake your personal life for work. By coming to work rested and happy, you will be much more productive and engaged.
-
-_And, you will make me smile when you:_
-
-Continue to improve your skills. Learn a new language, technology, & practice new techniques. 
-
-Volunteer to lead a project, take on a new challenge
-
+_Do not forsake your personal life for work. By coming to work rested and happy, you will be much more productive and engaged._
 
 # Communication
 
 Everyone has different ways of communicating and different comfort levels with speaking in groups. I try to provide everyone time to reflect and give feedback in ways that best suit them. I am always happy to present the dissenting opinions, if you are ever uncomfortable in larger settings.
 
-Extemporaneous speaking is not my strong suit, I will probably ramble. (Though I am better at it than I used to be.)
+ * Extemporaneous speaking is not my strong suit, I tend to ramble. \(I am better  than I used to be and continue to work on it.\)
+ * In emergencies, I have no problem making quick decisions but I prefer to think through the available options, pose questions, seek outside opinions and recommendations.
+ * When presenting to a group, I prefer to come prepared with slides and notes. 
 
-In emergencies I have no problem making quick decisions but I prefer to think through the available options, pose questions, seek outside opinions and recommendations.
-
-If I am presenting to a group, I prefer to come prepared with slides and/or notes. 
-
-In order of urgency [high to low], communicate with me: in-person, phone call (crisis), text message (urgent), Slack/IM, email.
+In order of urgency [high to low], communicate with me: 
+ * in-person or phone call \(crisis\), 
+ * text message \(urgent\), 
+ * Slack/IM \(normal\), 
+ * email \(low\)
 
 ## Schedules
 
-Most likely, my calendar will be pretty packed. I will always find time for you. 
+ * I like being organized and knowing what to expect. When I schedule a time with you I\'ll let you know what it is regarding. I appreciate you to do the same.
+ * I like predictability. I try to avoid haphazard scheduling. Of course, sometimes emergencies occur.
+ * If it is urgent, let me know. If you can’t find time on my calendar, contact me, we will work something out. 
 
-If it is urgent, let me know. If you can’t find time on my calendar, contact me, we will work something out. 
+_I will always find time for you._ 
 
 ## Meetings
 
@@ -93,7 +75,7 @@ I prefer to establish routine recurring meetings. By establishing a regular cade
 
 ## Stand-ups
 
-As teams have gotten more distributed, asynchronous channels of communication, such as Slack, have taken the place of traditional in-person stand-up. Still I am happy to hold stand-ups, if the team finds them valuable.
+As teams have gotten more distributed, asynchronous channels of communication, such as Slack, have taken the place of traditional in-person stand-ups. Still I am happy to hold stand-ups, if the team finds them valuable.
 
 However, stand-ups (if you hold them) are not status meetings. Meaning, I don’t need to know you are working on your assigned task. I assume you are doing your job. Tools are there to provide status. We should use them. Stand-ups are for coordinating the team’s effort toward its goals, sharing problems and improvements, and to bond as a team. 
 
@@ -112,12 +94,15 @@ Giving feedback should meet the following criteria:
  *	**Effort** (neither you nor I should feel defensive about the feedback)
  *	**Benefit** (giving/receiving feedback should have impact)
 
+\(Yes, this is the basic psychological safety pitch. Not my words, but I agree and want it on record.\)
 
 # Quirks
 
-As an introvert, I tend to keep quieter in larger settings. Typically, I will provide feedback after a short period of reflection.
+ * I take notes. Lots of notes. I will probably do this during our conversation, so I don’t forget an important detail. I am not ignoring you or working on something else. 
 
-“Just tell me what you want me to do”, is one of my least favorite responses to hear from someone.
+ * As an introvert, I tend to keep quieter in larger settings. Typically, I will provide feedback after a short period of reflection.
 
-I dislike arrogance.
+ * “Just tell me what you want me to do”, is one of my least favorite things to hear from you.
+
+ * I dislike arrogance and ego. Individuals who display these characteristics, more than any others, damage teams.
 
