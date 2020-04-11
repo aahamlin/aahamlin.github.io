@@ -1,5 +1,5 @@
 title: "Oblogatory"
-description: My obligatory blog. Notes on books, music, Gentoo, and skating.
+description: Notes on software development, books, music, and skateboarding.
 google_analytics: UA-63523632-2
 show_downloads: false
 show_excerpts: true
@@ -15,6 +15,7 @@ email: aahamlin@gmail.com
 
 header_pages:
   - index.md
+  - projects.md
   - manager_readme.md
   - about.md
   
