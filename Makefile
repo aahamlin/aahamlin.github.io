@@ -11,6 +11,6 @@ update:
 	bundle update
 
 run:
-	bundle exec jekyll serve
+	bundle exec jekyll serve --drafts
 
 .PHONY: help install update run
