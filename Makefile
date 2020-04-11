@@ -3,6 +3,8 @@
 help:
 	@echo Run site locally
 	@echo make run
+	@echo make install
+	@echo make update
 
 install:
 	bundle install

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing Docker on Gentoo
+title: Making an AWS Amplify Docker build image with elm-make on Gentoo
 ---
 
 Refer to Gentoo Wiki's [Docker](https://wiki.gentoo.org/wiki/Docker) page. I am following the `systemd` setup steps.
@@ -40,6 +40,50 @@ Building a build image for AWS Amplify containing elm and elm-test. Elm depends 
 
 ? aws amplify console sets up node using nvm, only available under bash shell ?
 
+Based on https://github.com/butaca/amplify-hugo
+
+Dockerfile
+```
+FROM amazonlinux:2
+
+ENV VERSION_ELM=0.19.1
+ENV VERSION_NODE=12.10.0
+
+# install curl, git, openssl (AWS Amplify requirements)
+# install tar, xz (nodejs requirements)
+RUN yum -y update && \
+    yum -y install curl git openssl tar xz && \
+    yum clean all && \
+    rm -fr /var/cache/yum
+
+# Install Node (AWS Amplify and elm-repl requirements)
+RUN mkdir -p /opt/nodejs && \
+    curl -L -o- https://nodejs.org/dist/v${VERSION_NODE}/node-v${VERSION_NODE}-linux-x64.tar.xz | tar -xJvf- -C /opt/nodejs
+
+# Rather than updating PATH env, symlink node,npm,npx to /usr/local/bin
+RUN ln -s /opt/nodejs/node-v${VERSION_NODE}-linux-x64/bin/{node,npm,npx} /usr/local/bin/
+
+# Install Elm
+RUN curl -L -o- https://github.com/elm/compiler/releases/download/${VERSION_ELM}/binary-for-linux-64-bit.gz | gunzip > /usr/local/bin/elm && \
+    chmod +x /usr/local/bin/elm
+
+CMD ["/usr/local/bin/elm", "repl"]
+```
+
+Docker image files
+
+```
+% docker images       
+REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
+aahamlin97/awsamplify-elm   0.19.1              d018d9ef7590        7 minutes ago       439MB
+aahamlin97/awsamplify-elm   latest              d018d9ef7590        7 minutes ago       439MB
+aahamlin97/awsamplify-elm   19.1                f789a4fb20e3        2 hours ago         88.9MB
+aahamlin97/awsamplify-elm   19.0                ea179b9d0f5c        24 hours ago        2GB
+amazonlinux                 2                   cd2d92bc1c0c        10 days ago         163MB
+```
+
+
+
 Walk through local build.
 Create a build script to compile elm, for simplicity.
 
@@ -74,8 +118,7 @@ Success! Compiled 33 modules.
 
 Note we can remove the build container after compile with the `--rm` flag to keep the disc clean. More on that later.
 
-**Warning** dealing with permissions of the docker output. The `elm.js` file will be owned by the `root` user, rather than your current user. This article and many other sources show how to map user and group ids, etc...
-https://vsupalov.com/docker-shared-permissions/
+**Warning** dealing with permissions of the docker output. The `elm.js` file will be owned by the `root` user, rather than your current user. This article and many other sources show how to map user and group ids, etc... See [https://vsupalov.com/docker-shared-permissions/](https://vsupalov.com/docker-shared-permissions/)
 
 I found locally that it was simply enough to add the `--user "$(id -u):$(id -g)"` argument to the `docker run` command.
 
