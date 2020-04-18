@@ -36,11 +36,9 @@ $ ebuild $(portageq get_repo_path / gentoo)/app-emulation/docker/docker-19.03.8.
 
 On my system, there are a number of unset kernel flags. Change directory into `/usr/src/linux` and run `make menuconfig` to set them properly. Make sure you checked the current kernel version \(check link to /usr/src/linux or use `eselect kernel list`\).
 
-Building a build image for AWS Amplify containing elm and elm-test. Elm depends on nodejs, so also adding node, npm, npx.
+## Creating the amplify-elm Docker image
 
-? aws amplify console sets up node using nvm, only available under bash shell ?
-
-Based on https://github.com/butaca/amplify-hugo
+Based on [https://github.com/butaca/amplify-hugo](https://github.com/butaca/amplify-hugo), I went through a number of experiments to find that amazonlinux:2 image was the best starting point. I chose install **node v12.10.0 LTS** version directly, rather than setting up `nvm` on the Docker image. And only installed the `elm` executable, as `elm-test` requires many node_modules and therefore the build steps can install `elm-test` as a build step.
 
 Dockerfile
 ```
@@ -70,22 +68,12 @@ RUN curl -L -o- https://github.com/elm/compiler/releases/download/${VERSION_ELM}
 CMD ["/usr/local/bin/elm", "repl"]
 ```
 
-Docker image files
-
-```
-% docker images       
-REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
-aahamlin97/awsamplify-elm   0.19.1              d018d9ef7590        7 minutes ago       439MB
-aahamlin97/awsamplify-elm   latest              d018d9ef7590        7 minutes ago       439MB
-aahamlin97/awsamplify-elm   19.1                f789a4fb20e3        2 hours ago         88.9MB
-aahamlin97/awsamplify-elm   19.0                ea179b9d0f5c        24 hours ago        2GB
-amazonlinux                 2                   cd2d92bc1c0c        10 days ago         163MB
-```
+The final Docker [image](https://hub.docker.com/repository/docker/aahamlin97/awsamplify-elm) is available on Docker Hub and the [amplify-elm](https://github.com/aahamlin/amplify-elm) project repo.
 
 
+## Test out the local build
 
-Walk through local build.
-Create a build script to compile elm, for simplicity.
+Using Docker images to compile locally is straight forward, other than some possible file permissions depending your platform. I created a small build script to compile elm.
 
 build.sh contents:
 ```
@@ -94,8 +82,6 @@ cd $SCRIPT_DIR
 elm make src/Main.elm --output=elm.js
 ```
 This makes the docker commandline to compile simple. Any build tool that exists \(in the docker image\) could be substituted for your needs.
-
-## Test out the local build.
 
 From my Elm app directory, presuming I have installed elm on my host machine directly, I can locally run ./build.sh and see:
 ```
@@ -120,14 +106,14 @@ Note we can remove the build container after compile with the `--rm` flag to kee
 
 **Warning** dealing with permissions of the docker output. The `elm.js` file will be owned by the `root` user, rather than your current user. This article and many other sources show how to map user and group ids, etc... See [https://vsupalov.com/docker-shared-permissions/](https://vsupalov.com/docker-shared-permissions/)
 
-I found locally that it was simply enough to add the `--user "$(id -u):$(id -g)"` argument to the `docker run` command.
+I found locally on my Gentoo box that it was simply enough to add the `--user "$(id -u):$(id -g)"` argument to the `docker run` command. On my MacBook, this was unnecessary. Docker Desktop for Mac preserved the permissions of my local user.
 
-
-## Keep my local host clean
+## Keep localhost storage clean
 
 See what docker has available by listing containers and images.
 ```
 $ docker ps -a
+
 $ docker images
 ```
 
@@ -146,5 +132,32 @@ The DockerHub repository required
 
 Additionally, I setup a docker hub access token for `docker login` to keep credentials \(more\) private but without the additional step of setting up a docker credential provider. Since this is just my home sandbox, it should be safe enough. =\)
 
+The Amplify setup is well documented by AWS \(as you'd expect\) but the build steps for Elm are represented here. If you choose to add `elm-test` in your package.json file, then uncomment the preBuild and test phases.
 
-The elm compiler worked but elm-test was unable to find the `./lib/elm-test.js` file so I am going back to run locally with a full build & test via docker container.
+```
+version: 0.1
+frontend:
+  phases:
+    # IMPORTANT - Please verify your build commands
+    #preBuild:
+    #  commands:
+    #    - npm ci
+    build:
+      commands: 
+        - elm make src/Main.elm --output=elm.js
+    #test:
+    #  commands:
+    #    - npx elm-test
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: /
+    files:
+      - 'assets/**/*'
+      - 'index.html'
+      - 'elm.js'
+  cache:
+    paths:
+      - 'node_modules/'
+      - 'elm-stuff/'
+```
+
