@@ -1,45 +1,29 @@
 ---
 layout: post
-title: Creating AWS Amplify Elm Project
+title: Create an AWS Amplify Elm Project
 ---
 
-## Install Amplify CLI globally
+My goal is to setup an Elm Progressive Web App on AWS Amplify Console. The backend will include GraphQL and DynamoDB. And include a build pipeline on (in?) AWS Amplify.
 
-```
-$ sudo npm -g @aws-amplify/cli
+I will create the progressive web app following this article [https://codeburst.io/how-to-make-an-elm-app-progressive-d2e17d2f6fea](https://codeburst.io/how-to-make-an-elm-app-progressive-d2e17d2f6fea).
 
-----------------------------------------
-Successfully installed the Amplify CLI
-----------------------------------------
-
-JavaScript Getting Started - https://aws-amplify.github.io/docs/js/start
-
-Android Getting Started - https://aws-amplify.github.io/docs/android/start
-
-iOS Getting Started - https://aws-amplify.github.io/docs/ios/start
-```
-
-## Progressive Web App in Elm
-
-I am interested in creating this as a progressive web app, and following this article [https://codeburst.io/how-to-make-an-elm-app-progressive-d2e17d2f6fea](https://codeburst.io/how-to-make-an-elm-app-progressive-d2e17d2f6fea). I chose not to go the `create-elm-app` approach for the following reasons:
- - its not upgraded to elm 0.19.1
- - the npm install failed with fatal erros after given me a zillion deprecration warnings
- - in general, I avoid these boilerplate setup programs due to bias
+I chose not to go the `create-elm-app` approach for the following reasons:
+- its not upgraded to elm 0.19.1
+- the npm install failed with fatal erros after given me a zillion deprecration warnings
+- in general, I avoid these boilerplate setup programs due to bias
 
 The steps I run through are:
- - Initialize a new elm 0.19.1 project
- - Initialize a node project
- - Install webpack-cli as a dev dependency
+1. Initialize a new elm 0.19.1 project
+1. Initialize a node project
+1. Install webpack-cli as a dev dependency
  
-
 ```
 $ elm init
 $ npm init
 $ npm i --save-dev webpack-cli
-
 ```
 
-Hmm, there are a number of updated steps not mentioned in the article because my local environment is missing some dependencies \(maybe the author installed them globally\?\) and/or because the newer versions of elm and other modules.
+Hmm, there are a number of updated steps not mentioned in the article because my local environment is missing some dependencies \(maybe the author installed them globally?\) and/or because the newer versions of elm and other modules.
 
 ```
 $ npm i -D webpack@4
@@ -154,7 +138,9 @@ Entrypoint app = app.js
 ...
 ```
 
-What has happened? The Elm upgrade to 0.19 requires us to initialize the elm app differently than before. The repo from the article contains the upgrade to 0.19 commits. This explains why I was seeing a difference between the Elm 0.19 reference documentation and projects and the article's code. 
+What has happened? The Elm upgrade to 0.19 requires us to initialize the elm app differently than before. The repo from the article contains the upgrade to 0.19 commits. 
+
+This explains why I was seeing a difference between the Elm 0.19 reference documentation and projects and the article's code. 
 
 The article's update contains this bootstrap code in `src/index.js`
 ```
@@ -172,11 +158,9 @@ Elm.Main.init({
 
 > Note that the Elm reference projects use a slightly different syntax where their Elm.Main.init() call does not refer to a node in the DOM.
 
-Trying `npm run start` after correctly the elm syntax and now the simple Elm UI displays our "hello" text. Now I can continue following the article on creating the PWA.
+After correcting the elm syntax and running `npm run start`,  the simple Elm UI displays our "hello" text. Now, I can continue following the article on creating the PWA.
 
 Having read and reviewed the manual steps, I am skipping ahead to making the dynamic build. This requires installing some more node modules. Again, I am under the assumption these can be installed as "devDependencies" until such time as this doesn't work for me. 
-
-> Note to avoid kruft in the output directory, e.g. "dist", I have added clean-webpack-plugin to the mix.
 
 ```
 $ npm i -D sw-precache-webpack-plugin
@@ -184,6 +168,79 @@ $ npm i -D webpack-pwa-manifest
 $ npm i -D clean-webpack-plugin
 ```
 
+To avoid kruft in the output directory, e.g. "dist", I have added clean-webpack-plugin to the mix.
 
 
-Next, I'll hook this up to AWS Amplify to publish the initial version.
+## Test PWA caching
+
+The simple file builds successfully with webpack in both production and development modes. Serving with the webpack-dev-server **will not** workto test the caching behavior of the service worker for the PWA because the manifest.json file is served by index.html. And, as we saw earlier, webpack-dev-server directly serves the index.js file **not** index.html. Installing `serve`, as the article suggests, is quit and painless.
+
+Installing the `server` node package globally makes sense as it has nothing to do with the project itself and is simply a small http server.
+```
+$ npm install -g serve
+$ npm run build
+$ server -l 3000 dist/
+```
+
+Open http://localhost:3000 again, this time served from `serve` rather than `webpack-dev-server` and you should see the "hello" text from you app. Then, use Chrome DevTools to navigate to Application > Server Workers and check the Offline checkbox. All as described in the article =)
+
+Refresh.
+
+Reload.
+
+It Works!
+
+## AWS Amplify Frontend
+
+Next, let's hook this up to AWS Amplify to publish the initial version.
+
+Login to the Amplify Console. Connect to the git repo. Amplify found the necessary build steps from my webpack setup. The only thing I had to customize here was using my AWS Amplify Elm-enabled Docker image in build Advance Settings > Build image settings, set the name of the build image to `aahamlin97/awsamplify-elm`. This image is available on DockerHub at [https://hub.docker.com/repository/docker/aahamlin97/awsamplify-elm](https://hub.docker.com/repository/docker/aahamlin97/awsamplify-elm).
+
+Once the build image is provisioned, the build steps all succeed and the app is available as shown in the Amplify Console. Retesting the Service Worker support shows that everything works as expected in the live environment, too!
+
+There are a couple notes for the future:
+- the build steps report a problem with node-gyp though there does not seem to be any negative side effect to the error
+- DevTools console give some Elm optimization suggestions, will need to update the webpack production mode build options at some point
+
+> The node-gyp error was:
+> gyp ERR! stack SystemError [ERR_SYSTEM_ERROR]: A system error occurred: uv_os_get_passwd returned ENOENT (no such file or directory)
+
+Now we have published a simple progressive web app written in Elm using AWS Amplify Console!
+
+## AWS Amplify Backend
+
+Of course, the app does nothing... 
+
+So let's provision a GraphQL API endpoint backed by DynamoDB using the Amplify CLI.
+
+In Amplify Console of your app, click on the Backend environments tab. This will walk you through the basics. First install Amplify CLI, globally. Then, with the CLI tool installed, initialize your project as shown in the Console.
+
+```
+$ sudo npm -g @aws-amplify/cli
+
+----------------------------------------
+Successfully installed the Amplify CLI
+----------------------------------------
+
+JavaScript Getting Started - https://aws-amplify.github.io/docs/js/start
+
+Android Getting Started - https://aws-amplify.github.io/docs/android/start
+
+iOS Getting Started - https://aws-amplify.github.io/docs/ios/start
+```
+
+The first thing to do once amplify CLI is installed is to setup your IAM user for your environment. `amplify configure`.
+
+The Amplify Console skips over this configuration step. Though their tutorial did walk me through it... but that was a few weeks ago and these aren't the types of steps you are likely to remember. Take some time to read through the [https://aws-amplify.github.io/docs/cli-toolchain/quickstart](https://aws-amplify.github.io/docs/cli-toolchain/quickstart). it covers the configuration as well as management of dev, test, prod environments and so forth.
+
+Using `amplify configure` I setup an AWS Profile named for the dev environment I am planning to setup. I will use that profile storing the access id and secret key of my new IAM user in the next step, `amplify init`.
+
+```
+$ amplify init  --appId {your_app_id}
+```
+
+Most of this is straight forward, I did run into some problems with the AWS region and the AWS Profile the first time around. Once I reran the configuration steps and setup a new IAM user, the init command worked as expected.
+
+
+
+

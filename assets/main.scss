@@ -32,6 +32,8 @@ $theme-dark-color: #1756a9;
     
     blockquote {
 	font-family: "Cutive Mono", "Consolas", "Courier New", Courier, monospace;
+	font-style: inherit;
+	color: inherit;
     }
 
     ul li.external-link {
