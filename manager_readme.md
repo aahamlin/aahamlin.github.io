@@ -3,7 +3,7 @@ layout: page
 title: Readme
 ---
 
-# How I view my role
+## How I view my role
 
 My role is to build a healthy team environment; where the team has:
  * trust, 
@@ -22,7 +22,7 @@ Some of the ways I contribute toward this goal:
  * (Also happy to brew the coffee, order food, sweep the floor, ... whatever it takes)
 
 
-# What to expect of me
+## What to expect of me
 
  * I will praise your successes publicly. When I have concerns and critiques, I will share them privately. 
  * I will not micromanage you. You were hired because you are capable.
@@ -32,7 +32,7 @@ Some of the ways I contribute toward this goal:
  * I will encourage you and also challenge you to grow, both technically and non-technically.
  * If I don’t have an answer for you or am not at liberty to share it with you, I will tell you. As much as possible, I will try to find the answer and get back to you.
 
-# What I expect from you
+## What I expect from you
 
  * Operate with integrity and empathy, at all times.
  * Do your job well. Help your team mates do their job well. 
@@ -45,7 +45,7 @@ Some of the ways I contribute toward this goal:
 
 _Do not forsake your personal life for work. By coming to work rested and happy, you will be much more productive and engaged._
 
-# Communication
+## Communication
 
 Everyone has different ways of communicating and different comfort levels with speaking in groups. I try to provide everyone time to reflect and give feedback in ways that best suit them. I am always happy to present the dissenting opinions, if you are ever uncomfortable in larger settings.
 
@@ -59,7 +59,7 @@ In order of urgency [high to low], communicate with me:
  * Slack/IM \(normal\), 
  * email \(low\)
 
-## Schedules
+### Schedules
 
  * I like being organized and knowing what to expect. When I schedule a time with you I\'ll let you know what it is regarding. I appreciate you to do the same.
  * I like predictability. I try to avoid haphazard scheduling. Of course, sometimes emergencies occur.
@@ -67,7 +67,7 @@ In order of urgency [high to low], communicate with me:
 
 _I will always find time for you._ 
 
-## Meetings
+### Meetings
 
 I do not like ineffective meetings. I try to ensure my meetings are productive. If you feel I haven’t done this, let me know. Meetings must have a clear purpose (agenda). I will take notes, list action items and owners and send summaries. My default is a 15-minute time slot and I try to keep 10-15 minutes between meetings, so I can summarize and prepare for the next meeting.
 
@@ -75,11 +75,11 @@ I prefer to establish routine recurring meetings. By establishing a regular cade
 
 ## Stand-ups
 
-As teams have gotten more distributed, asynchronous channels of communication, such as Slack, have taken the place of traditional in-person stand-ups. Still I am happy to hold stand-ups, if the team finds them valuable.
+As teams have gotten more distributed, _asynchronous_ channels of communication, such as Slack, have taken the place of traditional in-person stand-ups. Still I am happy to hold stand-ups, if the team finds them valuable.
 
 However, stand-ups (if you hold them) are not status meetings. Meaning, I don’t need to know you are working on your assigned task. I assume you are doing your job. Tools are there to provide status. We should use them. Stand-ups are for coordinating the team’s effort toward its goals, sharing problems and improvements, and to bond as a team. 
 
-# One on Ones
+## One on Ones
 
 I will setup one on one meetings with you, for 20-30 minutes once per week. We can refine the schedule over time. These are not for status updates; though we may talk about project work, if necessary. This is our chance to partner together on your goals, growth and feedback. If there is a serious or urgent matter to discuss, it should not wait for the scheduled timeslot.
 
@@ -96,13 +96,11 @@ Giving feedback should meet the following criteria:
 
 \(Yes, this is the basic psychological safety pitch. Not my words, but I agree and want it on record.\)
 
-# Quirks
+## Quirks
 
  * I take notes. Lots of notes. I will probably do this during our conversation, so I don’t forget an important detail. I am not ignoring you or working on something else. 
 
- * As an introvert, I tend to keep quieter in larger settings. Typically, I will provide feedback after a short period of reflection.
-
- * “Just tell me what you want me to do”, is one of my least favorite things to hear from you.
+ * As an introvert, I tend to keep quieter in larger settings. Typically, I will provide feedback one-on-one or in writing, after a short period of reflection. 
 
  * I dislike arrogance and ego. Individuals who display these characteristics, more than any others, damage teams.
 

@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-# A little about me
+## A little about me
 
 As an engineering leader, I have managed globally distributed teams, delivered data-driven SDLC changes, and successfully led turn-arounds of under-performing teams. I work to build highly engaged, productive teams who deliver well-crafted products. My teams have built industry-leading solutions, recognized by Gartner and KLAS.
 
@@ -14,7 +14,7 @@ Personally, I enjoy exploring new languages and technologies, such as Swift, Dar
 I also feel strongly about volunteering in my community and spent many years as a YMCA Swim Official and brought "[Hour of code](https://hourofcode.com/)" into the local elementary school, and facilitated an "Introductory programming" elective at a local High school.
 
 
-# Memorable moments
+## Memorable moments
 
 After delivering SSO & RFID reader support and Software Development Kit (SDK) and validation tools for Linux thin clients (VDI) on ARM & Intel processors to partners including Dell Wyse, HP SmartZero, & Teradici.
 
