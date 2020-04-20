@@ -239,8 +239,27 @@ Using `amplify configure` I setup an AWS Profile named for the dev environment I
 $ amplify init  --appId {your_app_id}
 ```
 
+Match the name of the environment to your git branch, e.g. "master".
+
 Most of this is straight forward, I did run into some problems with the AWS region and the AWS Profile the first time around. Once I reran the configuration steps and setup a new IAM user, the init command worked as expected.
 
+Generating both master and dev environments involved the following:
+```
+$ amplify add api
+```
+Again, be sure to match the environment name to your git branch, e.g. "master".
+
+I ran into a problem with the GraphQL generated schema not validating. `amplify api gql-compile` complains that the GraphQL type `ID!` is not valid. I found no report of this issue online but for now I simply used type `String!` as my IDs.
+
+Now that there are 2 environments, switching between them involves two steps:
+```
+$ git checkout <env>
+$ amplify env checkout <env>
+```
+
+Make sure you're on the right amplify env before pushing changes!
+
+Once you have created the graphql schema (in the right env) and created it with `amplify push`, go to AWS CloudFormation and AWS AppSync to review the deployments. AWS AppSync also provides an online query editor to test the API.
 
 
 

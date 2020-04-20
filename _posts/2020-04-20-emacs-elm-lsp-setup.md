@@ -18,9 +18,26 @@ Then, add the proper hook as provided in [eglot](https://github.com/joaotavora/e
 
 ### Node
 
-Install `elm-language-server` [plugin](https://github.com/elm-tooling/elm-language-server) for the language server protocol, `sudo node install -g @elm-tooling/elm-language-server`. On my Gentoo box, the npm install of `elm-format` fails so I have followed the [manual installation steps](https://github.com/avh4/elm-format/releases/tag/0.8.3).
+Install `elm-language-server` [plugin](https://github.com/elm-tooling/elm-language-server) for the language server protocol, `sudo node install -g @elm-tooling/elm-language-server`. 
+
+On my Gentoo box, the global npm install of `elm-format` fails so I have followed the [manual installation steps](https://github.com/avh4/elm-format/releases/tag/0.8.3). 
 
 _I should swing back and create ebuilds for both `elm` and `elm-format`_. =)
+
+And, on my MacBook, global npm install of `elm-test` failed when I used "sudo" but it worked without "sudo". Everything symlinked and installed properly to /usr/local/bin and /usr/local/lib/node_modules/elm-test; _something to keep in mind for the future_. 
+
+### Final configuration
+
+The emacs configuration for elm with LSP looks like this, having turned on `elm-format-on-save-mode`:
+```
+(require 'elm-mode)
+
+(add-hook 'elm-mode-hook
+          (lambda ()
+            (eglot-ensure)
+            (elm-format-on-save-mode)
+            ))
+```
 
 Now, restart Emacs and try editing an elm file.
 
