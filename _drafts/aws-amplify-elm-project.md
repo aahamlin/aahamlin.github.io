@@ -261,5 +261,82 @@ Make sure you're on the right amplify env before pushing changes!
 
 Once you have created the graphql schema (in the right env) and created it with `amplify push`, go to AWS CloudFormation and AWS AppSync to review the deployments. AWS AppSync also provides an online query editor to test the API.
 
+### GraphQL, & DynamoDB
+
+My initial graphql schema included two `@model` objects with some `@connection` annotations between. To my surprise, amplify generated two DynamoDB tables! Every AWS and Third-party tutorial and presentation I have read states that the a single table is the most preferable from scalability and cost perspectives. I didn't know what to expect in my first attempt but I really want to see if Amplify can create a single table solution.
+
+I removed the initial test code.
+
+```
+$ amplify api remove
+$ amplify status
+$ amplify push
+```
+
+Then, ran through and regenerated a new GraphQL schema from scratch following the detailed example found from Trek10.com at [https://www.trek10.com/blog/dynamodb-single-table-relational-modeling](https://www.trek10.com/blog/dynamodb-single-table-relational-modeling). The author nicely walked through converting the Northwind database into a single table DynamoDB model. He followed the advice found in AWS documentation and from a LinkedIn Learning video course on DynamoDB. The ideas finally clicked for me given the sample code linked to in the post that I could deploy into AWS and view in the AWS Console.
+
+Some posts on Reddit state that AWS Amplify does not support building single table solutions. That is _not_ true. The `@model` annotation creates a Table. Therefore a single table solution means your schema.graphql file will only contain a single `@model` annotation but many `@key` annotations to setup the necessary secondary indexes. The Northwind conversion follows similar advice to the LinkedIn Learning course utilizing generic names for the partition key, and composite sort keys.
+
+First things first. List all your known access patterns.
+
+I won't list all of my access patterns here but will show two examples including the mapping of the partition key and composite sort keys. For some context, I am building a job seeker management tool.
+
+1. Get all job descriptions applied in last month.
+2. Get all experiences for a work history.
+
+The following table shows how I mapped things out, with some comments.
+
+| Comment | pk | sk (GSI PK) | data (GSI SK) |
+|---------|----|-------------|--------------|
+| Job description | jobDescId | "JOBDESC" | appliedOn |
+| Resume for JD | resumeId | "RESUME" | jobDescId |
+| Work History heading | workHistoryId | "WORKHISTORY" | startDate#endDate |
+| Experience for work history or highlighted skills | skillId | resumeId -or- workHistoryId | text |
+
+Now, I can navigate to any item by its partition key ID. But, more importantly, without creating additional tables with `@connection` annotations between them, I can find relevant entries, such as my two examples.
+
+1. Getting all job descriptions applied to in the last month, is an index search for `sk = "JOBDESC" AND "data" >= "2020-04-01"`
+2. Getting all experiences for a work history, is an index search for `sk = workHistoryId`
+
+The schema sample for this setup is:
+```
+type Resume @model
+     @key(fields: ["pk", "sk"])
+     @key(name: "bySortKey", fields: ["sk", "data"], queryField: "itemsBySortData") {
+  """
+  Partition Key
+  resumeID, workHistoryID, skillID, jobDescID
+  """
+  pk: ID!
+
+  """
+  Sort Key
+  JOBDESC, RESUME, WORKHISTORY, resumeID, workHistoryID
+  """
+  sk: String!
+
+  """
+  Data
+  JobDesc: appliedOn
+  Resume: jobDescID
+  WorkHistory: startDate#endDate
+  Skill: text
+  """
+  data: String!
+  
+  createdAt: AWSDateTime!
+
+  ...
+```
+
+### The drawbacks
+
+One drawback to using Amplify to create a single table solution for DynamoDB is that the generated queries and mutations won't be as useful. They will include ALL the fields from your `@model` rather than fine-tuned collections of attributes.
+
+Another drawback is there is no type-checking for the data stored in composite sort keys, "sk" and "data". 
+
+## Elm, GraphQL, AWS Cognito
+
+At this point, I have purposefully _not_ added permissions or ownerships to the DynamoDB data, but I did setup authentication on the AWS side using Cognito User Pools. Therefore, while I can execute queries and mutations via the AWS AppSync Console successfully, the first thing I need to add to my elm project is user authentication against Cognito. Then, I can implement the first query.
 
 
