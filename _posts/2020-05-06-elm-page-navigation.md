@@ -16,7 +16,7 @@ I have broken this into 4 parts:
 
 First, what is the difference between and usage of all the different types? Example code usually names the main type Model. But the Model can be a union type or a record. And then there are the TitleCase type definitions, and type annotations with camelCase type variables. There is an elm-guide page about [type annotations](https://github.com/elm-guides/elm-for-js/blob/master/How%20to%20Read%20a%20Type%20Annotation.md), that covers things in more details. The initial [commit](https://github.com/aahamlin/elm-pages-sample/commit/7b7be86711d1ee30e64ae7735fe05dde72607ba4) sets up 3 pages: Home, Login, Settings and allows you to navigate between them.
 
-To break my mind laziness and force understanding of the Model and Msg types. I defined them as AppModel and AppMsg.
+To break my mind's laziness and force an understanding of the Model and Msg types. I defined them as AppModel and AppMsg.
 
 ```
 type AppModel
@@ -134,7 +134,7 @@ view model = { title = "Login"
 
 During the `update` function, the DoLogin msg returns a Cmd CompletedLogin msg. It accomplishes this by calling `Task.perform`. Like, `Http.send` this is an Elm function that produces `Cmd msg` outputs. In our case, the Login page produces a `Cmd Login.Msg`, as shown by the `update` function's type annotation which is using an uppercase Msg rather than a lowercase msg.
 
-The `fakeLogin` function runs the task (or Cmd) for us. And `Task.succeed` returns the success Result which contains a Viewer created from the token credential produced by `Api.login`. See the Msg type, `CompletedLogin (Result String Viewer)` 
+The `fakeLogin` function runs the task for us, in other words, the `Task` creates the `Cmd msg` return value. And `Task.succeed` returns the success Result which contains a Viewer created from the token credential produced by `Api.login`. See the Msg type, `CompletedLogin (Result String Viewer)` 
 
 ```
 
