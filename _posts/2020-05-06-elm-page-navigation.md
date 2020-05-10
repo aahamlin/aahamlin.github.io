@@ -3,7 +3,7 @@ title: Basic page navigation with Elm 0.19.1
 layout: post
 ---
 
-[Elm](https://elm-lang.org) is a functianal language for building web pages. I first discovered Elm back around 2015, before my life went haywire. Getting back to it now, I decided to break down the single page application example, [rtfeldmand/elm-spa-example](https://github.com/rtfeldman/elm-spa-example), to make sure I understand the basics better. (Also, this uses webpack for builds and Bootstrap 4.3 CSS for themes.)
+[Elm](https://elm-lang.org) is a functional language for building web pages. I first discovered Elm back around 2015, before my life went haywire. Getting back to it now, I decided to break down the single page application example, [rtfeldmand/elm-spa-example](https://github.com/rtfeldman/elm-spa-example), to make sure I understand the basics better. (Also, this uses webpack for builds and Bootstrap 4.3 CSS for themes.)
 
 I have broken this into 4 parts:
 1. Types and records
@@ -225,6 +225,8 @@ Completing the code walk-through of this stage, look at the `src/index.js` file 
 ## Protect Pages
 
 Preventing unauthorized users from seeing content many options. In this [commit](https://github.com/aahamlin/elm-pages-sample/commit/8a055a633aecefb6513400d80338916b343588f2) I just redirect to the Home page, but the later [commit](https://github.com/aahamlin/elm-pages-sample/commit/61f69982e0f2dd5061380bd3cc741696cecaeff5) redirects to the Login page and specifies a returnRoute to go back to the protected resource after completing the login flow. 
+
+**TODO** I am going to come back to this in the near future. A couple of different working versions are in the commit history but I think integrating this with the Page module itself will be more robust.
 
 ## Load Cached Credentials
 
