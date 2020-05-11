@@ -253,30 +253,32 @@ window.addEventListener("storage", function(evt) {
 
 ## Protected Routes
 
-Preventing unauthorized users from seeing content many options. In this [commit](https://github.com/aahamlin/elm-pages-sample/commit/8a055a633aecefb6513400d80338916b343588f2) I just redirect to the Home page, but the later [commit](https://github.com/aahamlin/elm-pages-sample/commit/61f69982e0f2dd5061380bd3cc741696cecaeff5) redirects to the Login page and specifies a returnRoute to go back to the protected resource after completing the login flow. 
+Preventing unauthorized users from seeing content has many options. In this [commit](https://github.com/aahamlin/elm-pages-sample/commit/8a055a633aecefb6513400d80338916b343588f2), I just redirect to the Home page. Later, I redirect to the Login page with a return route in [commit](https://github.com/aahamlin/elm-pages-sample/commit/61f69982e0f2dd5061380bd3cc741696cecaeff5), after completing the login flow. 
 
-Honestly, I was not happy with either of the previous implementations to restrict page access. Every record model of a protected page needed an extra returnRoute field, complicating the page models. And, every page module needed to be updated. I thought about adding a function to the `Page.elm` module, similar to `Page.view` but I did not find an implementation that would compile to support the necessary types. Going down this road quickly developed a [code smell](https://en.wikipedia.org/wiki/Code_smell) so I switched to using **protected routes** instead of pages. This worked out so much better in the end. 
+Honestly, I was not happy with either of the previous implementations to restrict page access. Every record model of a protected page needed an extra returnRoute field, complicating the page models. And, every page module needed to be updated in order to protect them. I thought about adding a function to the `Page.elm` module, similar to `Page.view` but I did not find an implementation that would compile to support the necessary types. Going down this road quickly developed a [code smell](https://en.wikipedia.org/wiki/Code_smell) so I switched to using **protected routes** instead of pages. This worked out so much better in the end. 
 
-As we are in a single-page application, the Browser.application defines `onUrlChange` and `onUrlRequest` handlers. All our internal navigation from page to page flows through the update logic in Main either from clicking a link in the app, such as on the Navbar links, or programmatically from a Route.replaceUrl call. In both cases, Main's `update` receive a UrlChanged or LinkClicked msg. All of which resolve to the url changing and, therefore, the UrlChanged branch is executed, calling the `changeRouteTo` function, our app's *router*. This [commit](https://github.com/aahamlin/elm-pages-sample/commit/10df9a682429dfcf26a807724172177d6a571e37) shows the small change to the router that will enable routing to any combination of route and LoggedInUser or Guest.
+In a single-page application, the `Browser.application` defines `onUrlChange` and `onUrlRequest` handlers. All our internal navigation from page to page flows through the update logic in Main; either from clicking a link in the app, such as on the Navbar links, or programmatically with a Route.replaceUrl call. In both cases, Main's `update` receives a UrlChanged or LinkClicked msg. All of which result in the url changing and, therefore, the UrlChanged branch is executed calling the `changeRouteTo` function, e.g. the *router*. 
 
 ```
-        ( LinkClicked urlRequest, _ ) ->
-            case urlRequest of
-                Browser.Internal url ->
-                    ( model
-                    , Nav.pushUrl
-                        (Session.navKey (toSession model))
-                        (Url.toString url)
-                    )
+  ( LinkClicked urlRequest, _ ) ->
+      case urlRequest of
+          Browser.Internal url ->
+              ( model
+              , Nav.pushUrl
+                  (Session.navKey (toSession model))
+                  (Url.toString url)
+              )
 
-                Browser.External href ->
-                    ( model, Nav.load href )
+          Browser.External href ->
+              ( model, Nav.load href )
 
-        ( UrlChanged url, _ ) ->
-            changeRouteTo (Route.fromUrl url) model
+  ( UrlChanged url, _ ) ->
+      changeRouteTo (Route.fromUrl url) model
 ```
 
-The function takes a `Maybe Route` and `AppModel` and produces the model and Cmd msg for the Main `update` function. The first change is to retrieve `Maybe Viewer`, remembering that Viewer only exists when a user has logged in successfully. The case statement is changed to branch on a typle of our route and viewer rather than just the route.
+This [commit](https://github.com/aahamlin/elm-pages-sample/commit/10df9a682429dfcf26a807724172177d6a571e37) shows the small change to the `changeRouteTo` function that will enable routing to any combination of route and LoggedInUser or Guest. The function takes a `Maybe Route` and `AppModel` and produces the model and Cmd msg for the Main `update` function.
+
+The first change is to retrieve `Maybe Viewer`, remembering that Viewer only exists when a user has logged in successfully. The case statement is changed to branch on a typle of our route and viewer rather than just the route.
 
 ```
 changeRouteTo : Maybe Route -> AppModel -> ( AppModel, Cmd AppMsg )
@@ -285,7 +287,7 @@ changeRouteTo maybeRoute model =
         session =
             toSession model
 
-        -- protected routes redirect to login, if there is not a Viewer
+        -- protected routes require a Viewer
         maybeViewer =
             Session.viewer session
     in
@@ -293,12 +295,12 @@ changeRouteTo maybeRoute model =
     ...
 ```
 
-In the case of the non-protected routes that are viewable by users and guests alike, we simply ignore the maybeViewer value.
+In the case of the non-protected routes, that are viewable by users and guests alike, we simply ignore the maybeViewer value.
 
 ```
- ( Just Route.Home, _ ) ->
-            Home.init session
-                |> updateWith Home GotHomeMsg
+   ( Just Route.Home, _ ) ->
+        Home.init session
+            |> updateWith Home GotHomeMsg
 ```
 
 And for the protected routes, we handle two paths.
@@ -306,24 +308,24 @@ And for the protected routes, we handle two paths.
 1. When there is not a viewer, we send them to the Login route with the request route as a 2nd arguemt
 
 ```
-        ( Just Route.Settings, Just _ ) ->
-            Settings.init session
-                |> updateWith Settings GotSettingsMsg
+  ( Just Route.Settings, Just _ ) ->
+      Settings.init session
+          |> updateWith Settings GotSettingsMsg
 
-        ( Just Route.Settings, Nothing ) ->
-            Login.init session (Just Route.Settings)
-                |> updateWith Login GotLoginMsg
+  ( Just Route.Settings, Nothing ) ->
+      Login.init session (Just Route.Settings)
+          |> updateWith Login GotLoginMsg
 ```
 
 The Login page changed slightly, and I think it is an improvement. The Login.Model expects a Maybe Route. Back in the router, the Login url simply supplies Nothing when access directly.
 
 ```
-        ( Just Route.Login, _ ) ->
-            Login.init session Nothing
-                |> updateWith Login GotLoginMsg
+  ( Just Route.Login, _ ) ->
+      Login.init session Nothing
+          |> updateWith Login GotLoginMsg
 ```
 
-And we handle the Maybe Route in the Login `update` function, rather than `init`. The credential caching to the ports triggers the `GotSession` msg. Via update or subscription, every page in the application will respond to the login (or logout) event. When the Login page updates due to the GotSession branch we call `Route.replaceUrl` with `Maybe.withDefault` to send the user to the Home page or the previous route.
+And we handle `Maybe Route` in the Login `update` function, rather than `init`. The credential caching to the ports triggers the `GotSession` msg. Via update or subscription, every page in the application will respond to the logout (or login) event. When the Login page updates due to the GotSession branch we call `Route.replaceUrl` with `Maybe.withDefault` to send the user to the Home page or the previous route.
 
 ```
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -341,4 +343,4 @@ In this way, they will be returned to the protected route after completing the l
 
 ## Conclusion
 
-I hope that this clarifies some of the details of the elm-spa-example application for you.
+I hope this helps clarify some of the details of the elm-spa-example application for you, too.
