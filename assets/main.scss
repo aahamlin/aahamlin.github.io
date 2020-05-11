@@ -3,15 +3,22 @@
 ---
 
 @import '{{ site.theme }}';
-@import url("https://fonts.googleapis.com/css?family=Cutive+Mono|Karma");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Lora");
 
 $theme-light-color: #BCCAFE;
 $theme-dark-color: #1756a9;
+
+$text-decor-light: #d8d8d8;
+$text-decor-dark: #555;
 
 .site-header {
     border-top-width: 1.0em;
     border-top-color: $theme-dark-color;
     border-bottom-color: $theme-light-color;
+
+    a.site-title:hover {
+        text-decoration: none;
+    }
 }
 
 .site-footer {
@@ -20,22 +27,29 @@ $theme-dark-color: #1756a9;
 
 .page-content {
     font-size: 1.3em;
-    font-family: Karma, 'Helvetica Neue', Helvetica, Arial, serif;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, serif;
 
-    h1, h2, h3, h4, h5, h6, strong { font-weight: 600; }
+    h1, h2, h3, h4, h5, h6, strong {
+        font-weight: 500;
+    }
     h1 { font-size: 1.5em; }
     h2 { font-size: 1.2em; }
     h3 { font-size: 1.15em; }
     h4 { font-size: 1.0em; }
     h5 { font-size: 0.8em; }
     h6 { font-size: 0.65em; }
-    
-    blockquote {
-	font-family: "Cutive Mono", "Consolas", "Courier New", Courier, monospace;
+
+    pre, code {
+	font-family: "Source Code Pro", "Consolas", "Courier New", Courier, monospace;
 	font-style: inherit;
-	color: inherit;
     }
 
+    blockquote {
+        font-size: inherit;
+        color: $text-decor-dark;
+        border-left: 8px solid $text-decor-light;
+    }
+    
     ul li.external-link {
 	list-style-type: none;
 	margin-left: -30px;
