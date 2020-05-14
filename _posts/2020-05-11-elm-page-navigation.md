@@ -11,7 +11,6 @@ I have broken this into 4 parts:
 1. Load cached credentials
 1. Protected routes 
 
-
 ## Types and Records
 
 First, what is the difference between and usage of all the different types? Example code usually names the main type Model. But the Model can be a union type or a record. And then there are the TitleCase type definitions, and type annotations with camelCase type variables. There is an elm-guide page about [type annotations](https://github.com/elm-guides/elm-for-js/blob/master/How%20to%20Read%20a%20Type%20Annotation.md), that covers things in more details. The initial [commit](https://github.com/aahamlin/elm-pages-sample/commit/7b7be86711d1ee30e64ae7735fe05dde72607ba4) sets up 3 pages: Home, Login, Settings and allows you to navigate between them.
@@ -101,14 +100,20 @@ The function call works like this.
 3. Calls updateWith AppModel Home and AppMsg GotHomeMsg and the returned tuple from the previous step
 4. updateWith resolves the type variables based on the returned tuple and **maps** the page's Model and Msg to the AppModel and AppMsg types
 
-Unwinding the type annotations of the updateWith function caused my brain to explode. First, I invented an interpretation that was useful, but wasn't entirely accurate, "subModel = any entry in the AppModel type enum". Later, as I was unpacking the `subscriptions` function, the understanding came.
+Unwinding the type annotations of the updateWith function caused my brain to explode. Initially, I invented an interpretation that was useful, but wasn't entirely accurate, "subModel = any entry in the AppModel type enum". Later, as I was unpacking the `subscriptions` function, the understanding became clear. Again, the type annotation of `updateWith` is 
+```
+(subModel -> AppModel) -> (subMsg -> AppMsg) -> ( subModel, Cmd subMsg ) -> ( AppModel, Cmd AppMsg )
+```
 
-The type annotation is `updateWith : (subModel -> AppModel) -> (subMsg -> AppMsg) -> ( subModel, Cmd subMsg ) -> ( AppModel, Cmd AppMsg )`. This defines a function that takes three arguments and returns a tuple containing AppModel and Cmd AppMsg. From left to right, the three arguments are:
-1. a function that takes an argument subModel that returns an AppModel
-1. a function that take an argument subMsg that returns an AppMsg
-1. a tuple containing subModel and subCmd
+This defines a function that takes three arguments and returns a tuple consisting of `AppModel` and `Cmd AppMsg`.
+From left to right, the three arguments are:
+1. a function that takes an argument of `subModel` and returns an `AppModel`
+1. a function that take an argument `subMsg` and returns an `AppMsg`
+1. a tuple consisting of `subModel` and `subCmd`
 
-Let's walk through a simple example in `elm repl`. Define a type Model with two types, one that takes a String and one that takes an Int. See that each entry in the Model is itself a function.
+We can walk through a simple example in `elm repl`. 
+
+Define a type Model with two types, one that takes a String and one that takes an Int. See that each entry in the Model is itself a function.
 ```
 > type Model
 |   = TakeStr String
@@ -129,7 +134,7 @@ Let's mimic the `updateWith` function by defining a function that takes an argum
 <function> : (a -> b) -> a -> b
 ```
 
-Now, using the function we can return either of the two Model types.
+Using the function, we can return either of the two Model types.
 
 ```
 > update TakeStr "bob"
@@ -144,9 +149,13 @@ Home.update subMsg home
    |> updateWith Home GotHomeMsg
 ```
 
-It makes sense to start with the third argument, as this defines the type variables. The Home module's `update` function returns a tuple (Home.Model, Cmd Home.Msg) giving us the two variable types of subModel and subMsg. 
+It makes sense to start with the third argument, as this is what defines the type variables. The Home module's `update` function returns a tuple *(Home.Model, Cmd Home.Msg)* giving us the two variable types of `subModel` and `subMsg`. 
 
-The first argument is a function that takes subModel (Home.Model) and returns an AppModel. And the second argument is a function that takes subMsg (Home.Msg) and returns an AppMsg. Based on our `elm repl` example, we see that the type Home and GotHomeMsg are themselves functions that take Home.Model and Home.Msg arguments, respectively, and return AppModel and AppMsg types.
+The first argument is a function that takes `subModel` and returns an `AppModel`. Looking back at our type AppModel, we have a the definition for this, e.g. `| Home Home.Model`.
+
+And the second argument is a function that takes `subMsg` and returns an `AppMsg`. Looking back at our type AppMsg, we have a definition for this, e.g. `| GotHomeMsg Home.Msg`.
+
+Based on our `elm repl` example, we see that the types `Home` and `GotHomeMsg` are themselves functions that take `Home.Model` and `Home.Msg` arguments, respectively, and return `AppModel` and `AppMsg` types.
 
 
 ## Credential Caching

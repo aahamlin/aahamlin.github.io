@@ -21,6 +21,8 @@ $highlight-bg-color: #FAFAFA;
 $highlight-text-color: #1D2D44;
 $highlight-border-color: #e8e8e8;
 
+$header-text-color: #0D1321;
+
 .site-header {
     border-top-width: 1.0em;
     border-top-color: $theme-dark-color;
@@ -40,6 +42,7 @@ $highlight-border-color: #e8e8e8;
     font-family: "Lora", "Helvetica Neue", Helvetica, Arial, serif;
 
     h1, h2, h3, h4, h5, h6, strong {
+	color: $header-text-color;
         font-weight: 500;
     }
     h1 { font-size: 1.5em; }
