@@ -93,13 +93,61 @@ updateWith toModel toMsg ( subModel, subCmd ) =
     )
 ```
 
-The `updateWith` function uses type variables. This allows support for all possible types in the pages. The function call works like this.
+The `updateWith` function uses type variables. This allows support for all possible types in the pages.
+
+The function call works like this.
 1. Main.update receives a *AppMsg=(GotHomeMsg Home.Msg)* and an *AppModel=(Home Home.Model)*
 2. Calls Home.update with the provided Home.Msg  and Home.Model values. The return is a tuple of *(Home.Model, Cmd Home.Msg)*
 3. Calls updateWith AppModel Home and AppMsg GotHomeMsg and the returned tuple from the previous step
 4. updateWith resolves the type variables based on the returned tuple and **maps** the page's Model and Msg to the AppModel and AppMsg types
 
-I have not found a direct explanation of the type variables usage in updateWith, e.g. (subModel -> AppModel) and (subMsg -> AppMsg) but my interpretation from this project is _"subModel = any entry in the AppModel type enum"_.
+Unwinding the type annotations of the updateWith function caused my brain to explode. First, I invented an interpretation that was useful, but wasn't entirely accurate, "subModel = any entry in the AppModel type enum". Later, as I was unpacking the `subscriptions` function, the understanding came.
+
+The type annotation is `updateWith : (subModel -> AppModel) -> (subMsg -> AppMsg) -> ( subModel, Cmd subMsg ) -> ( AppModel, Cmd AppMsg )`. This defines a function that takes three arguments and returns a tuple containing AppModel and Cmd AppMsg. From left to right, the three arguments are:
+1. a function that takes an argument subModel that returns an AppModel
+1. a function that take an argument subMsg that returns an AppMsg
+1. a tuple containing subModel and subCmd
+
+Let's walk through a simple example in `elm repl`. Define a type Model with two types, one that takes a String and one that takes an Int. See that each entry in the Model is itself a function.
+```
+> type Model
+|   = TakeStr String
+|   | TakeInt Int
+|   
+> TakeStr
+<function> : String -> Model
+> TakeInt
+<function> : Int -> Model
+```
+
+Let's mimic the `updateWith` function by defining a function that takes an argument that is a function that take a single argument `a` and returns a Model.
+```
+> update : (a -> Model) -> Model
+> update toModel val =
+|   toModel val
+|   
+<function> : (a -> b) -> a -> b
+```
+
+Now, using the function we can return either of the two Model types.
+
+```
+> update TakeStr "bob"
+TakeStr "bob" : Model
+> update TakeInt 3
+TakeInt 3 : Model
+```
+
+Now, reading back through the definition of `updateWith` we can dissect the Home branch of the case statement,
+```
+Home.update subMsg home
+   |> updateWith Home GotHomeMsg
+```
+
+It makes sense to start with the third argument, as this defines the type variables. The Home module's `update` function returns a tuple (Home.Model, Cmd Home.Msg) giving us the two variable types of subModel and subMsg. 
+
+The first argument is a function that takes subModel (Home.Model) and returns an AppModel. And the second argument is a function that takes subMsg (Home.Msg) and returns an AppMsg. Based on our `elm repl` example, we see that the type Home and GotHomeMsg are themselves functions that take Home.Model and Home.Msg arguments, respectively, and return AppModel and AppMsg types.
+
 
 ## Credential Caching
 
