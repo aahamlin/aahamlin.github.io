@@ -5,11 +5,23 @@
 @import '{{ site.theme }}';
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Lora");
 
-$theme-light-color: #BCCAFE;
-$theme-dark-color: #1756a9;
+/*
+Coolors.co
+#1756A9 bedazzled blue
+#0D1321 rich black
+#1D2D44 prussian blue
+#3E92CC Tufts blue
+#427AA1 Steel blue
+#EDF2FA Alice blue
+*/
+$theme-light-color: #3E92CC;
+$theme-dark-color: #1756A9;
 
-$text-decor-light: #d8d8d8;
-$text-decor-dark: #555;
+$highlight-bg-color: #FAFAFA;
+$highlight-text-color: #1D2D44;
+$highlight-border-color: #e8e8e8;
+
+$header-text-color: #0D1321;
 
 .site-header {
     border-top-width: 1.0em;
@@ -30,6 +42,7 @@ $text-decor-dark: #555;
     font-family: "Lora", "Helvetica Neue", Helvetica, Arial, serif;
 
     h1, h2, h3, h4, h5, h6, strong {
+	color: $header-text-color;
         font-weight: 500;
     }
     h1 { font-size: 1.5em; }
@@ -41,13 +54,27 @@ $text-decor-dark: #555;
 
     pre, code {
 	font-family: "Source Code Pro", "Consolas", "Courier New", Courier, monospace;
-	font-style: inherit;
+	font-size: 0.9em;
+	color: $highlight-text-color;
+	background-color: inherit;
+    }
+
+    a:hover, a:visited {
+	color: $theme-dark-color;
     }
 
     blockquote {
         font-size: inherit;
-        color: $text-decor-dark;
-        border-left: 8px solid $text-decor-light;
+        color: $highlight-text-color;
+        border-left: 8px solid $theme-light-color;
+	border-bottom: 1px solid $highlight-border-color;
+	background-color: $highlight-bg-color;
+	padding: 8px 0 8px 15px;
+    }
+
+    .highlighter-rouge .highlight {
+	background: $highlight-bg-color;
+	border: 1px solid $highlight-border-color;
     }
     
     ul li.external-link {

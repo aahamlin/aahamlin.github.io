@@ -11,7 +11,6 @@ I have broken this into 4 parts:
 1. Load cached credentials
 1. Protected routes 
 
-
 ## Types and Records
 
 First, what is the difference between and usage of all the different types? Example code usually names the main type Model. But the Model can be a union type or a record. And then there are the TitleCase type definitions, and type annotations with camelCase type variables. There is an elm-guide page about [type annotations](https://github.com/elm-guides/elm-for-js/blob/master/How%20to%20Read%20a%20Type%20Annotation.md), that covers things in more details. The initial [commit](https://github.com/aahamlin/elm-pages-sample/commit/7b7be86711d1ee30e64ae7735fe05dde72607ba4) sets up 3 pages: Home, Login, Settings and allows you to navigate between them.
@@ -93,13 +92,71 @@ updateWith toModel toMsg ( subModel, subCmd ) =
     )
 ```
 
-The `updateWith` function uses type variables. This allows support for all possible types in the pages. The function call works like this.
+The `updateWith` function uses type variables. This allows support for all possible types in the pages.
+
+The function call works like this.
 1. Main.update receives a *AppMsg=(GotHomeMsg Home.Msg)* and an *AppModel=(Home Home.Model)*
 2. Calls Home.update with the provided Home.Msg  and Home.Model values. The return is a tuple of *(Home.Model, Cmd Home.Msg)*
 3. Calls updateWith AppModel Home and AppMsg GotHomeMsg and the returned tuple from the previous step
 4. updateWith resolves the type variables based on the returned tuple and **maps** the page's Model and Msg to the AppModel and AppMsg types
 
-I have not found a direct explanation of the type variables usage in updateWith, e.g. (subModel -> AppModel) and (subMsg -> AppMsg) but my interpretation from this project is _"subModel = any entry in the AppModel type enum"_.
+Unwinding the type annotations of the updateWith function caused my brain to explode. Initially, I invented an interpretation that was useful, but wasn't entirely accurate, "subModel = any entry in the AppModel type enum". Later, as I was unpacking the `subscriptions` function, the understanding became clear. Again, the type annotation of `updateWith` is 
+```
+(subModel -> AppModel) -> (subMsg -> AppMsg) -> ( subModel, Cmd subMsg ) -> ( AppModel, Cmd AppMsg )
+```
+
+This defines a function that takes three arguments and returns a tuple consisting of `AppModel` and `Cmd AppMsg`.
+From left to right, the three arguments are:
+1. a function that takes an argument of `subModel` and returns an `AppModel`
+1. a function that take an argument `subMsg` and returns an `AppMsg`
+1. a tuple consisting of `subModel` and `subCmd`
+
+We can walk through a simple example in `elm repl`. 
+
+Define a type Model with two types, one that takes a String and one that takes an Int. See that each entry in the Model is itself a function.
+```
+> type Model
+|   = TakeStr String
+|   | TakeInt Int
+|   
+> TakeStr
+<function> : String -> Model
+> TakeInt
+<function> : Int -> Model
+```
+
+Let's mimic the `updateWith` function by defining a function that takes an argument that is a function that take a single argument `a` and returns a Model.
+```
+> update : (a -> Model) -> Model
+> update toModel val =
+|   toModel val
+|   
+<function> : (a -> b) -> a -> b
+```
+
+Using the function, we can return either of the two Model types.
+
+```
+> update TakeStr "bob"
+TakeStr "bob" : Model
+> update TakeInt 3
+TakeInt 3 : Model
+```
+
+Now, reading back through the definition of `updateWith` we can dissect the Home branch of the case statement,
+```
+Home.update subMsg home
+   |> updateWith Home GotHomeMsg
+```
+
+It makes sense to start with the third argument, as this is what defines the type variables. The Home module's `update` function returns a tuple *(Home.Model, Cmd Home.Msg)* giving us the two variable types of `subModel` and `subMsg`. 
+
+The first argument is a function that takes `subModel` and returns an `AppModel`. Looking back at our type AppModel, we have a the definition for this, e.g. `| Home Home.Model`.
+
+And the second argument is a function that takes `subMsg` and returns an `AppMsg`. Looking back at our type AppMsg, we have a definition for this, e.g. `| GotHomeMsg Home.Msg`.
+
+Based on our `elm repl` example, we see that the types `Home` and `GotHomeMsg` are themselves functions that take `Home.Model` and `Home.Msg` arguments, respectively, and return `AppModel` and `AppMsg` types.
+
 
 ## Credential Caching
 
