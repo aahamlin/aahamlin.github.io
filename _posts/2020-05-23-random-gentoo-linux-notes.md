@@ -7,7 +7,7 @@ tags: covid-19, audio, ffmpeg
 My son needs to record a vocal performance for school. Its going to be a choral review built by piecing together audio-video tracks of all students, filmed at home in quaratine due to covid-19. I suggested we use my Tascam DP-02CF digital recorder, all I needed was the song in WAV format (44.1K 16-bit mono, to be exact), then we could record his vocal track, etc. The song was sent to us in .m4a file. After some fiddling and missteps, `ffmpeg` was able to decode m4a and produce 2 mono wav tracks in a single command.
 
 ```
-ffmpeg -i source.m4a -map\_channel 0.0.0 LEFT.WAV -map\_channel 0.0.1 RIGHT.WAV
+ffmpeg -i source.m4a -map_channel 0.0.0 LEFT.WAV -map_channel 0.0.1 RIGHT.WAV
 ```
 
 
