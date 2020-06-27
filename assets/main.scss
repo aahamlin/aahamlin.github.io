@@ -2,7 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "{{ site.theme }}";
+@import "{{ site.theme }}"
+;
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro|Lora");
 
 /*
@@ -102,8 +103,37 @@ $footer-bg-color: #EAEAEA;
     min-width: 200px;
 }
 
+.img-responsive-50 {
+    width: 50%;
+    height: auto;
+    min-width: 250px;
+}
+
+.img-responsive-66 {
+    width: 66%;
+    height: auto;
+    min-width: 300px;
+}
+
+.img-shadow {
+    box-shadow: 5px 5px 5px $highlight-text-color;
+}
+
 .pull-right {
     float: right;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .img-profile {
