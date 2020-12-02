@@ -16,7 +16,7 @@ The steps I run through are:
 1. Initialize a new elm 0.19.1 project
 1. Initialize a node project
 1. Install webpack-cli as a dev dependency
- 
+
 ```
 $ elm init
 $ npm init
@@ -101,7 +101,7 @@ Time: 1488ms
 Built at: 04/18/2020 3:19:52 PM
      Asset       Size  Chunks             Chunk Names
     app.js   23.9 KiB       0  [emitted]  app
-index.html  266 bytes          [emitted]  
+index.html  266 bytes          [emitted]
 Entrypoint app = app.js
 [0] multi ./src/index.js 28 bytes {0} [built]
 [1] ./src/index.js 236 bytes {0} [built]
@@ -109,7 +109,7 @@ Entrypoint app = app.js
 [3] ./src/Main.elm 88.1 KiB {0} [built]
 ```
 
-So far so good. Our Elm app compiles successfully. However, when I run it `npm run start` the web output is a blank page. Looking at the webpack-dev-server output, the file being served is what will become the `app.js` file during the build step, in our case `src/index.js`. 
+So far so good. Our Elm app compiles successfully. However, when I run it `npm run start` the web output is a blank page. Looking at the webpack-dev-server output, the file being served is what will become the `app.js` file during the build step, in our case `src/index.js`.
 
 ```
 $ npm run start
@@ -121,7 +121,7 @@ $ npm run start
 ℹ ｢wds｣: webpack output is served from /
 ℹ ｢wds｣: Content not from webpack is served from /home/andrew/src/rezumei
 Running elm make /home/andrew/src/rezumei/src/Main.elm --output /tmp/2020318-15752-12j4e07.9e6hj.js
-Success!     
+Success!
 
     Main ───> /tmp/2020318-15752-12j4e07.9e6hj.js
 
@@ -132,15 +132,15 @@ Time: 735ms
 Built at: 04/18/2020 4:08:32 PM
      Asset       Size  Chunks             Chunk Names
     app.js    460 KiB     app  [emitted]  app
-index.html  266 bytes          [emitted]  
+index.html  266 bytes          [emitted]
 Entrypoint app = app.js
 [1] multi (webpack)-dev-server/client?http://localhost:3000 ./src/index.js 40 bytes {app} [built]
 ...
 ```
 
-What has happened? The Elm upgrade to 0.19 requires us to initialize the elm app differently than before. The repo from the article contains the upgrade to 0.19 commits. 
+What has happened? The Elm upgrade to 0.19 requires us to initialize the elm app differently than before. The repo from the article contains the upgrade to 0.19 commits.
 
-This explains why I was seeing a difference between the Elm 0.19 reference documentation and projects and the article's code. 
+This explains why I was seeing a difference between the Elm 0.19 reference documentation and projects and the article's code.
 
 The article's update contains this bootstrap code in `src/index.js`
 ```
@@ -160,7 +160,7 @@ Elm.Main.init({
 
 After correcting the elm syntax and running `npm run start`,  the simple Elm UI displays our "hello" text. Now, I can continue following the article on creating the PWA.
 
-Having read and reviewed the manual steps, I am skipping ahead to making the dynamic build. This requires installing some more node modules. Again, I am under the assumption these can be installed as "devDependencies" until such time as this doesn't work for me. 
+Having read and reviewed the manual steps, I am skipping ahead to making the dynamic build. This requires installing some more node modules. Again, I am under the assumption these can be installed as "devDependencies" until such time as this doesn't work for me.
 
 ```
 $ npm i -D sw-precache-webpack-plugin
@@ -209,7 +209,7 @@ Now we have published a simple progressive web app written in Elm using AWS Ampl
 
 ## AWS Amplify Backend
 
-Of course, the app does nothing... 
+Of course, the app does nothing...
 
 So let's provision a GraphQL API endpoint backed by DynamoDB using the Amplify CLI.
 
@@ -323,7 +323,7 @@ type Resume @model
   Skill: text
   """
   data: String!
-  
+
   createdAt: AWSDateTime!
 
   ...
@@ -333,10 +333,8 @@ type Resume @model
 
 One drawback to using Amplify to create a single table solution for DynamoDB is that the generated queries and mutations won't be as useful. They will include ALL the fields from your `@model` rather than fine-tuned collections of attributes.
 
-Another drawback is there is no type-checking for the data stored in composite sort keys, "sk" and "data". 
+Another drawback is there is no type-checking for the data stored in composite sort keys, "sk" and "data".
 
 ## Elm, GraphQL, AWS Cognito
 
 At this point, I have purposefully _not_ added permissions or ownerships to the DynamoDB data, but I did setup authentication on the AWS side using Cognito User Pools. Therefore, while I can execute queries and mutations via the AWS AppSync Console successfully, the first thing I need to add to my elm project is user authentication against Cognito. Then, I can implement the first query.
-
-

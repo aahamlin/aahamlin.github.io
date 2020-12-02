@@ -1,4 +1,5 @@
 title: "Oblogatory"
+logo: files/logo.png
 description: Notes on software development, books, music, and skateboarding.
 google_analytics: UA-63523632-2
 show_downloads: false
@@ -18,9 +19,9 @@ header_pages:
   - projects.md
   - manager_readme.md
   - about.md
-  
+
 github_username: aahamlin
 instagram_username: andrewhamlin
 # bitbucket_username: andrew_hamlin
-twitter_username: ahamlinSWeng
+# twitter_username: ahamlinSWeng
 linkedin_username: andrewahamlin
