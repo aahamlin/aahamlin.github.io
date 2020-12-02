@@ -3,6 +3,8 @@ layout: post
 title: Create an AWS Amplify Elm Project
 ---
 
+_Note: This is an unfinished and half-forgotten post._{:class="info"}
+
 My goal is to setup an Elm Progressive Web App on AWS Amplify Console. The backend will include GraphQL and DynamoDB. And include a build pipeline on (in?) AWS Amplify.
 
 I will create the progressive web app following this article [https://codeburst.io/how-to-make-an-elm-app-progressive-d2e17d2f6fea](https://codeburst.io/how-to-make-an-elm-app-progressive-d2e17d2f6fea).
