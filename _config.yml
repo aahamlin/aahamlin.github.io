@@ -25,3 +25,8 @@ instagram_username: andrewhamlin
 # bitbucket_username: andrew_hamlin
 # twitter_username: ahamlinSWeng
 linkedin_username: andrewahamlin
+
+plugins:
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap
