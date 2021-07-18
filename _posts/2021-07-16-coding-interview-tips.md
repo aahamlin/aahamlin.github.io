@@ -10,9 +10,15 @@ Contrary to what most companies and hiring managers believe, that technical inte
 
 More than likely, you can solve any coding challenge you will encounter in an interview (calibrated to the level/position you are applying for, of course). The real challenge is combatting the internal anxiety, the [fight-or-flight response](https://www.psychologytools.com/resource/fight-or-flight-response/), that comes from being judged competent enough to gain employment or not. Are you worthy enough to gain membership into this particular software development team?
 
-This semi-irrational fear can be seriously detrimental. You need to earn money to eat and have a roof over your head, and how will you provide for your spouse/partner/kids, how will you save for emergencies, and how much can you save for retirements? And.. and... and...
+This semi-irrational fear can stop you cold. You need to earn money to eat, and put a roof over your head, and how will you provide for your spouse or partner or kids, and how will you save for emergencies, and what about retirement?
 
-Thoughts spiral out of control pretty quickly. Everything will be okay... as long as you can implement this binary search algorithm in the next 15 minutes, without mistakes and without sweating enough that this dude in the wrinkled t-shirt, conspicuously hiding his stare ("I wonder what he's writing about me? I bet he's noting how long its taken me to start typing.") while taking notes, will think you get stressed out under pressure ("This is just a simple exercise, I do things harder than this all the time, how much time has gone by?").
+And...
+
+And...
+
+And...
+
+Thoughts spiral out of control pretty quickly. Everything will be okay... as long as you can implement this binary search algorithm in the next 15 minutes, without mistakes and without sweating enough that this dude in the wrinkled t-shirt, conspicuously hiding his stare while taking notes, will think you get stressed out under pressure ("I wonder what he's writing about me? I bet he's noting how long its taken me to start typing. How much time has gone by?").
 
 If you are wired anything like me, this probably sounds all too familiar. And has probably played out in your head many times in your career. That's pretty much how I always feel under these conditions. The coding interview is one of a handful of encounters that will very quickly cause my brain to completely and utterly lock up. What starts as a simple coding exercise turns into an existential crisis in about a minute and a half.
 
