@@ -24,9 +24,11 @@ If you are wired anything like me, this probably sounds all too familiar. And ha
 
 So, if your suffer in these situations as I do, what should you do? Quoting the immortal advice of [The Hitchhiker's Guide to the Galaxy](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#Don't_Panic), Don't Panic! Actually, that's terrible advice. Telling yourself not to panic will probably make you worry more and panic faster.
 
-The key I have found is to turn off your fight or flight response by having a coping strategy. In other words, have a plan of action to execute. Then, focus (and continually re-focus) on executing the steps. In yoga, your body will continually go in and out of center. It's just physics. The key is to adjust back to center. In meditation, your mind wanders. It just does. The key is to continue to come back to the focal point. The same concept applies to managing your stress response in during these interview situations. How can you accomplish this when you don't know what question you will be asked? The surprise nature of the questions often adds to the stress of the situation.
+The key I have found is to turn off your fight or flight response by having a coping strategy. In other words, have a plan of action. Then, focus (and continually re-focus) on executing the steps. In yoga, your body will continually go in and out of center. The key is to adjust back to center. In meditation, your mind wanders. It just does. The key is to continue to come back to the focal point. The same concept applies to managing your stress response during these interview situations. How can you accomplish this when you don't know what question you will be asked? The surprise nature of the questions also adds to the stress of the situation.
 
-Here is a stragey that helped me, and I hope will help you. If your evaluation is in person, memorize it, write it in your notebook and take it with you, read it as many times as you can before and in-between the interview stages. If you're doing a video interview, write this on a 3x5" note card and tape it to your monitor.
+Here is a stragey that helped me, and I hope will help you. 
+
+If your evaluation is in person, memorize it, write it in your notebook and take it with you, read it as many times as you can before and in-between the interview stages. If you're doing a video interview, write this on a 3x5" note card and tape it to your monitor.
 
 ## Steps to help you manage during your Coding Interview
 
@@ -45,3 +47,5 @@ Basically, apply TDD to the coding exercise. Identify the goal, write a failing 
 > **Pro tip:** If the interviewer says, "You don't need to write tests for this", consider politely saying, "Thank you for your time. I don't think this is the opportunity for me. Good luck filling your role."
 
 When your anxiety peeks again, breathe, look at your notes, and reset your focus on the next immediate step!
+
+What might this look like? You probably won't have access to your favorite testing library and won't have time to setup a whole environment, the point is to produce the correct answer within the limited time frame. You can create an ad-hoc test environment simply by using the language's assert. 
