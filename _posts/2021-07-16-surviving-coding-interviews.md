@@ -24,17 +24,15 @@ Actually, that's terrible advice. Telling yourself not to panic will probably ma
 
 ## Steps to manage stress during your coding interview
 
-It's okay to take a few minutes to think through the problem. It's okay to write notes to yourself. When you're ready, breathe, and use these simple steps.
+It's okay to take a few minutes to think through the problem. It's okay to write notes to yourself. Ask clarifying questions, breakdown the problem, and strategize a solution. When you're ready, breathe, and use these simple steps.
 
-1. Ask clarifying questions, breakdown the problem, and strategize a solution.
+1. Explain your approach to the interviewer
 
-2. Explain your approach to the interviewer
+2. Write a test for one task
 
-3. Write a test for one task
+3. Write the code for the test
 
-4. Write the code for the test
-
-5. Repeat steps 3 and 4 until done
+5. Repeat steps 2 and 3 until done
 
 If your evaluation is in person, memorize the steps, write them in your notebook, and read it as many times as you can before and in-between the interview stages. If you're doing a video interview, write them on a 3x5" note card and tape it to your monitor.
 
@@ -48,7 +46,7 @@ What might this look like? You probably won't have access to your favorite testi
 
 I recommend practicing this with some common programming algorithms in the language you will be using in the interview. Remind yourself of the steps throughout your practice:
 
-1. State the solution
+1. State your solution
 
 2. Write one test
 
