@@ -26,7 +26,7 @@ Actually, that's terrible advice. Telling yourself not to panic will probably ma
 
 It's okay to take a few minutes to think through the problem. It's okay to write notes to yourself. Ask clarifying questions, breakdown the problem, and strategize a solution. When you're ready, breathe, and use these simple steps.
 
-1. Explain your approach to the interviewer
+1. Explain your approach
 
 2. Write a test for one task
 
@@ -38,7 +38,7 @@ If your evaluation is in person, memorize the steps, write them in your notebook
 
 Basically, apply [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html) to the coding exercise. Identify the goal, write a failing test, write code to make the test pass, and improve the code as you go along, repeat until the problem is done.
 
-> **Bonus tip** If the interviewer says, "You don't need to write tests for this", consider politely saying, "Thank you for your time. I don't think this is the opportunity for me. Good luck filling your role."
+> If the interviewer says, "You don't need to write tests for this", consider politely saying, "Thank you for your time. I don't think this is the opportunity for me. Good luck filling your role."
 
 When your anxiety peeks again, breathe, look at your notes, and reset your focus on the next immediate step!
 
@@ -46,7 +46,7 @@ What might this look like? You probably won't have access to your favorite testi
 
 I recommend practicing this with some common programming algorithms in the language you will be using in the interview. Remind yourself of the steps throughout your practice:
 
-1. State your solution
+1. Explain your approach
 
 2. Write one test
 
