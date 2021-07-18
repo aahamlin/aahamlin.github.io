@@ -22,12 +22,13 @@ Thoughts spiral out of control pretty quickly. Everything will be okay... as lon
 
 If you are wired anything like me, this probably sounds all too familiar. And has probably played out in your head many times in your career. That's pretty much how I always feel under these conditions. The coding interview is one of a handful of encounters that will very quickly cause my brain to completely and utterly lock up. What starts as a simple coding exercise turns into an existential crisis in about a minute and a half.
 
-So what should you do? [DON'T PANIC](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#Don't_Panic)
+So, if your suffer in these situations as I do, what should you do? Quoting the immortal advice of [The Hitchhiker's Guide to the Galaxy](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#Don't_Panic), Don't Panic! Actually, that's terrible advice. Telling yourself not to panic will probably make you worry more and panic faster.
 
-Here is a stragey that helped me, and I hope will help you. If your evaluation is in person, memorize it, take your notecard with you, read it as many times as you can before/in-between the interview stages. If you're doing a video interview/assessment, write this on a note card and tape it to your monitor.
+The key I have found is to turn off your fight or flight response by having a coping strategy. In other words, have a plan of action to execute. Then, focus (and continually re-focus) on executing the steps. In yoga, your body will continually go in and out of center. It's just physics. The key is to adjust back to center. In meditation, your mind wanders. It just does. The key is to continue to come back to the focal point. The same concept applies to managing your stress response in during these interview situations. How can you accomplish this when you don't know what question you will be asked? The surprise nature of the questions often adds to the stress of the situation.
 
+Here is a stragey that helped me, and I hope will help you. If your evaluation is in person, memorize it, write it in your notebook and take it with you, read it as many times as you can before and in-between the interview stages. If you're doing a video interview, write this on a 3x5" note card and tape it to your monitor.
 
-## Steps for a Coding Interview
+## Steps to help you manage during your Coding Interview
 
 It's okay to take a few minutes to think the problem through. It's okay to write notes to yourself. When you're ready, breathe and use these simple steps. After step one, explain what you plan to do.
 
