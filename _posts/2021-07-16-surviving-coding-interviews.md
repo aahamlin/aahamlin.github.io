@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tips for coding interviews... without the panic!
+title: Surviving coding interviews... without the panic!
 excerpt: Contrary to what most companies and hiring managers believe, that technical interviews evaluate your ability to program, the coding interview is really testing is your response to stress.
 ---
 
