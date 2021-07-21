@@ -36,15 +36,16 @@ It's okay to take a few minutes to think through the problem. It's okay to write
 
 If your evaluation is in person, memorize the steps, write them in your notebook, and read it as many times as you can before and in-between the interview stages. If you're doing a video interview, write them on a 3x5" note card and tape it to your monitor.
 
-Basically, apply [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html) to the coding exercise. Identify the goal, write a failing test, write code to make the test pass, and improve the code as you go along, repeat until the problem is done.
+Basically, what I am suggesting here is that you apply [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html) to the coding exercise. Identify the goal, write a failing test, write code to make the test pass, and improve the code as you go along, repeat until the problem is done. **When your anxiety peeks** again, and you lose your train of thought, **breathe**, look at your notes, and **reset your focus on the next step!**
+
 
 > If the interviewer says, "You don't need to write tests for this", consider politely saying, "Thank you for your time. I don't think this is the opportunity for me. Good luck filling your role."
 
-When your anxiety peeks again, breathe, look at your notes, and reset your focus on the next immediate step!
+## Practice the steps before the interview
 
-What might this look like? You probably won't have access to your favorite testing library and won't have time to setup a whole environment, the point is to produce the correct answer within a limited time frame. You can create an ad-hoc test environment by using the language's `assert` function.
+What might this test-driven approach look like in an interview situation? You probably won't have access to your favorite testing library, nor will you have time to setup an ideal environment; the point of the interview is to produce the correct answer within a limited time frame. However, you can create an ad-hoc test environment by using some of the language's features, such as the `assert` function.
 
-I recommend practicing this with some common programming algorithms in the language you will be using in the interview. Remind yourself of the steps throughout your practice:
+Practice using whatever ad-hoc test framework you come up with on some common programming algorithms in the language you will be using in the interview. This way you can design the simplest test approach and get some experience with it. Does it print an error that is easily understandable? Can you quickly compare the `expected` and `actual` output?Remind yourself of the steps throughout your practice:
 
 1. Explain your approach
 
