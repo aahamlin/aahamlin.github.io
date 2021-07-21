@@ -47,7 +47,9 @@ Basically, what I am suggesting here is that you apply [TDD](https://martinfowle
 
 What might this test-driven approach look like in an interview situation? You probably won't have access to your favorite testing library, nor will you have time to setup an ideal environment; the point of the interview is to produce the correct answer within a limited time frame. However, you can create an ad-hoc test environment by using some of the language's features, such as the `assert` function.
 
-Practice using whatever ad-hoc test framework you come up with on some common programming algorithms in the language you will be using in the interview. This way you can design the simplest test approach and get some experience with it. Does it print an error that is easily understandable? Can you quickly compare the `expected` and `actual` output?Remind yourself of the steps throughout your practice:
+> The goal of this practice is **not** to improve your coding ability but to **strengthen your ability to regain focus**.
+
+Practice using whatever ad-hoc test framework you come up with on some common programming algorithms in the language you will be using in the interview. This way you can design the simplest test approach and get some experience with it. Does it print an error that is easily understandable? Can you quickly compare the `expected` and `actual` output? Remind yourself of the steps throughout your practice:
 
 1. Explain your approach
 
@@ -58,3 +60,7 @@ Practice using whatever ad-hoc test framework you come up with on some common pr
 4. Repeat
 
 This repetition will help you remember the steps when your stress response starts to kick in. When you are in the interview, remind yourself to focus on what needs to be done to complete the next step. The goal of this practice is **not** to improve your coding ability but to **strengthen your ability to regain focus**. Just like practicing yoga or meditation.
+
+## What's next?
+
+Now, practice your strategy, practice regaining focus, and make yourself proud at your next tech screening!
