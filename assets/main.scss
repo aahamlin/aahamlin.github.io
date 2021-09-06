@@ -47,7 +47,7 @@ $footer-bg-color: #EAEAEA;
     font-weight: 400;
     color: $text-color;
 
-    h1, h2, h3, h4, h5, h6, strong {
+    h1, h2, h3, h4, h5, h6 {
 	    color: $theme-dark-color;
         font-weight: 600;
     }
@@ -58,6 +58,10 @@ $footer-bg-color: #EAEAEA;
     h5 { font-size: 0.8em; }
     h6 { font-size: 0.65em; }
 
+    strong {
+        color: $highlight-text-color;
+    }
+    
     pre, code {
 	font-family: "Source Code Pro", "Consolas", "Courier New", Courier, monospace;
 	font-size: 0.8em;
