@@ -28,9 +28,7 @@ This is the definition I use.
 
 ![Cycletime definition](/files/cycletime_def.png){:class="img-responsive-66"}
 
-Additionally, following Little's Law, you can find the average WIP for your team:
-
-**Average WIP = Throughput * Cycletime average**
+Additionally, following Little's Law, you can find the average WIP for your team: `Average WIP = Throughput * Cycletime average`
 
 The Standard Deviation can help show you how volatile the cycle times of your team are. That is are you breaking stories down into similarly sized increments or is there a large deviation between a short (small) story and a long (large) story?
 
@@ -49,18 +47,22 @@ A sample data table looks like this:
 Loading your cycletimes into a spreadsheet (this example using Google Sheets), you can view your team's average cycletime over an average time period. Using Google Sheets QUERY function, you can calculate the average cycle time as follows:
 
 ```
-=AVERAGE(QUERY({Range}, \
-  "SELECT N WHERE H > date '"&TEXT(H2-30, "yyyy-mm-dd")&"' \
-  AND H <= date '"&TEXT(H2, "yyyy-mm-dd")&"'", 1))
+=IFERROR(AVERAGE(QUERY($A$2:$B$21, \
+  "SELECT B WHERE A > date '"&TEXT(A2-10, "yyyy-mm-dd")&"' \
+  AND A <= date '"&TEXT(A2, "yyyy-mm-dd")&"'", 1)), B2)
 ```
 
 Where:
 
-- Range: The data range to query over, e.g. `A$2:N$50`
+- Range: The data range to query over, e.g. `$A$2:$N$50`
 - Column N: Cycle time
 - Column H: Closed date
 
-The rolling average is specified by subtracting desired period from the close date in column H. The example is using 30 days.
+Important notes:
+
+- The Range value should be static ($A$2:$B:$21) while the cells should be dynamically referenced (A2, B2) to propagate the formula correctly.
+- The rolling average is specified by subtracting desired period from the close date in column H. The example is using 30 days.
+- If the QUERY function returns a single cell, the AVERAGE formula will fail, therefore IFERROR simply returns the single cell.
 
 ### Calculating Cycle time percentiles
 
@@ -73,15 +75,11 @@ For example, given a month of cycletimes using the Percentile formula I can see 
 
 With these values, we can predict how long it will take the team to finish an amount of work.
 
-```
-Total business days = (Total items * average cycle time) / Throughput
-```
+`Total business days = (Total items * average cycle time) / Throughput`
 
 You can use WORKDAY function to calculate the project end date by percentage.
 
-```
-End date = WORKDAY(TODAY(), TotalBusinessDays)
-```
+`Completion date = WORKDAY(TODAY(), TotalBusinessDays)`
 
 Using the average cycletimes in the table above and a team throughput of 1.4 items/day, this would look like:
 
@@ -93,6 +91,18 @@ Using the average cycletimes in the table above and a team throughput of 1.4 ite
 
 Another positive here is that this is a whole team metric, not a per individual one.
 
-Now, as a team, you can discuss how to make improvements, either increasing throughput or decreasing cycle time will increase flow through the system. Analysis of your development workflow, such as using a Cumulative Flow diagram, can help surface patterns of inefficiency that block items flowing through your development system. ![CFD Diagram](/files/chart.png)
+## What's next?
+
+As a team, you can discuss how to make improvements, either increasing throughput or decreasing cycle time will increase flow through the system. Analysis of your development workflow, such as using a Cumulative Flow and Scatterplot diagrams, can help surface patterns of inefficiency that block items flowing through your development system.
+
+Here's a sample set of diagrams that are useful.
+
+![CFD Diagram](/files/chart.png)
+
+![Cycle time scatterplot](/files/scatterplot.png)
+
+![Histogram](/files/histogram.png)
+
+_The graphs are just examples and are not related to the above example data._
 
 If you have a product management system (Jira, Gitlab, etc), then you can just pull the team's performance data directly, and calculate a probability forecast. At its simplest, a Kanban workflow contains a prioritized list of work to do, work in progress, and work completed. To expose deeper patterns, your workflow should include the discreet steps. If, for instance, your team uses an asynchronous code review process rather than mobbing, then code review would be another step in your workflow.
