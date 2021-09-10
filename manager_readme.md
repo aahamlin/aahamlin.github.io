@@ -75,9 +75,7 @@ _I will always find time for you._
 
 ### Stand-ups
 
-As teams have gotten more distributed, _asynchronous_ channels of communication, such as Slack, have taken the place of traditional in-person stand-ups. Still I am happy to hold stand-ups, if the team finds them valuable.
-
-However, stand-ups are not status meetings. Meaning, I don\'t need to hear that you are working on your assigned task. I assume you are doing your job. Tools are there to provide status; use them. Stand-ups are for coordinating the team’s effort toward its goals, sharing problems and improvements, and to bond as a team.
+As teams have gotten more distributed, _asynchronous_ channels of communication, such as Slack, have taken the place of traditional in-person stand-ups. Stand-ups are for coordination of the team’s effort toward its goals, organizing collaboration, adapting daily to new information, and to bond as a team. I have seen this work most effectively where the team can see and hear each other in real time. In-person, phone or video chat are ideal. This can work over Slack, however, timing is a key element. If the team posts their messages within the same 10 minute time period, then everyone can be engaged. If updates span and entire morning you lose a lot of potential value. Additionally, I dislike the Bots that I have used because they an added level of detachment from your team mates. The more asynchronous the communication, the less value is generated from the practice. In this most detached form,you can definitely still bond as a team by sharing about your day but you lose many of the other benefits of real time communication.
 
 ### One on Ones
 
