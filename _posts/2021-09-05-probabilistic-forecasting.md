@@ -3,19 +3,19 @@ layout: post
 title: Using Probabilistic Forecasting
 ---
 
-My first experience with Kanban was in 2012 or 2013 when, as manager of a sustaining engineering team, I needed to organize software delivery against internal SLAs. We were responsible for resolving Support issues escalated to Engineering. The timeframes and priorities changed daily, if not hourly. Managing via Scrum with sprints was simply not adaptive enough. I found a [great primer](https://www.infoq.com/minibooks/priming-kanban-jesper-boeg/) from Jesper Boeg on Kanban and over a month or so reinvented our development process. The turn around was dramatic and the team wonderfully successful.
+My first experience with Kanban was in 2012 or 2013 when, as manager of a sustaining engineering team, I needed to organize software delivery against internal SLAs. We were responsible for resolving Support issues escalated to Engineering. The time frames and priorities changed daily, if not hourly. Managing via Scrum with sprints was simply not adaptive enough. I found a [great primer](https://www.infoq.com/minibooks/priming-kanban-jesper-boeg/) from Jesper Boeg on Kanban and over a month or so reinvented our development process. The turn around was dramatic and the team wonderfully successful.
 
 Ever since, I have been a big fan of Lean/Kanban practices for product development. I have found that the straight forward prioritized queues and data driven process improvements makes life simpler for the team, and makes projections more reliable for the organization.
 
 ## Forecasting versus estimating
 
-Of course, there are no 100% gaurantees in software. You may hit something unexpected at any turn. Therefore, time-boxing your releases is generally better than scope-boxing your releases. And, if you want to predict when a feature will be avaialable, better to predict based on your past performance than predict on estimates. Estimates are only guesses, and do not account for the unknowns we run into in software every day.
+Of course, there are no 100% guarantees in software. You may hit something unexpected at any turn. Therefore, time-boxing your releases is generally better than scope-boxing your releases. And, if you want to predict when a feature will be available, better to predict based on your past performance than predict on estimates. Estimates are only guesses, and do not account for the unknowns we run into in software every day.
 
 Forecasting without estimates allows your team to discuss what to build and how to build it, without spending time guessing how long it will take. Several companies I have worked for have (not surprisingly) used some implementation of Scrum. When using Scrum, estimation by story points far out performs time estimates. But, why spend your developers time estimating the effort when they could be focused on the problem and implementing a solution?
 
 Saying that the team does not need to estimate the effort is not to say that the team doesn't need to think about the effort at all. Work should still be broken into reasonably sized increments; what the team feels could take between 1-3 days, for example. The goal is entirely different than speculating when the work might be completed. By creating relatively equal sized units of work you will reduce the standard deviation and your predictability will be less volatile. Managed this way, the stream of work it is also easier to adapt to change, and you no longer have the overhead of Scrum in moving stories in and out of Sprints. A story is no longer necessary or no longer a priority, simply drop it or stop working on it.
 
-**How do this work?**
+**How does this work?**
 
 If you don't estimate, how can you ever tell how long a (set of) change(s) will take?
 
@@ -31,7 +31,7 @@ All the calculations are built from three essential metrics: throughput, cycle t
 * **Cycle time**: Amount of time it takes to close one item (from when work starts to when its closed)
 * **WIP**: Number of items in progress
 
-You can find the average WIP for your team: **Average WIP = Throughput * Cycletime average**
+You can find the average WIP for your team: **Average WIP = Throughput * Cycle time average**
 
 Standard Deviation can help show you how volatile the cycle times of your team are. That is are you breaking stories down into similarly sized increments or is there a large deviation between a short (small) story and a long (large) story?
 
@@ -40,7 +40,7 @@ A sample data table looks like this:
 | Workdays in period      | 25          |
 | Closed in period        | 35          |
 | Throughput (Closed/day) | 1.4         |
-| Cycletime average       | 4.11        |
+| Cycle time average       | 4.11        |
 | Average WIP             | 5.76        |
 | StdDev                  | 3.012084504 |
 
@@ -48,11 +48,11 @@ Cycle time and Lead time in software development have been applied from the manu
 
 This is the definition I am using:
 
-![Cycletime definition](/files/cycletime_def.png){:class="img-responsive-66"}
+![Cycle time definition](/files/cycletime_def.png){:class="img-responsive-66"}
 
 ### Calculating rolling average cycle time
 
-Loading your cycletimes into a spreadsheet (this example using Google Sheets), you can view your team's average cycletime over an average time period. Using Google Sheets QUERY function, you can calculate the average cycle time as follows:
+Loading your cycle times into a spreadsheet (this example using Google Sheets), you can view your team's average cycle time over an average time period. Using Google Sheets QUERY function, you can calculate the average cycle time as follows:
 
 ```
 =IFERROR(AVERAGE(QUERY($A$2:$B$21, \
@@ -74,9 +74,9 @@ Important notes:
 
 ### Calculating Cycle time percentiles
 
-Probabilistic forecasting gives you the ability to predict the likelihood of completing an amount of work based on your team's past performance. Use various percentiles of your cycletimes to calculate the possible chances of completing an amount of work within a period of time.
+Probabilistic forecasting gives you the ability to predict the likelihood of completing an amount of work based on your team's past performance. Use various percentiles of your cycle times to calculate the possible chances of completing an amount of work within a period of time.
 
-For example, given a month of cycletimes using the Percentile formula I can see that 95% of the time a unit of work is completed less than 5 days, and 50% of the time it is completed in less than 4.3 days.
+For example, given a month of cycle times using the Percentile formula I can see that 95% of the time a unit of work is completed less than 5 days, and 50% of the time it is completed in less than 4.3 days.
 
 | Probability        | 95.00% | 85.00% | 70.00% | 50.00% |
 | Cycle time (30-day) | 4.91   | 4.65   | 4.38   | 4.29   |
@@ -85,7 +85,7 @@ With these values, we can predict how long it will take the team to finish an am
 
 `Total business days = (Total items * average cycle time) / Throughput`
 
-Using the average cycletimes in the table above and a team throughput of 1.4 items/day, the result looks like this:
+Using the average cycle times in the table above and a team throughput of 1.4 items/day, the result looks like this:
 
 | Total Issues        | Total Work at 95% | at 85%    | at 70%     | at 50%     |
 | 20                  | 98.2              | 93        | 87.6       | 85.8       |
@@ -104,7 +104,7 @@ Another positive here is that this is a whole team metric, not a per individual 
 
 ## Visualizing and analysis of flow
 
-As a team, you can discuss how to make improvements, either increasing throughput or decreasing cycle time will increase flow through the system. Analysis of your development workflow, such as using a Cumulative Flow and Scatterplot diagrams, can help surface patterns of inefficiency that block items flowing through your development system.
+As a team, you can discuss how to make improvements, either increasing throughput or decreasing cycle time will increase flow through the system. Analysis of your development workflow, such as using a Cumulative Flow and Scatter plot diagrams, can help surface patterns of inefficiency that block items flowing through your development system.
 
 This measurement and improvement of flow is based on [Little's Law](https://en.wikipedia.org/wiki/Little%27s_law). You can find a lot online about Little's Law. The math is pretty simple. By limiting WIP, you can decrease the cycle time and increase the throughput. A great visual demonstration of this is on YouTube created by Michel Grootjans, [Explaining team flow](https://www.youtube.com/watch?v=bhpQKA9XYcE).
 
@@ -112,10 +112,10 @@ Here's a sample set of diagrams that I find useful when looking for patterns and
 
 ![CFD Diagram](/files/chart.png)
 
-![Cycle time scatterplot](/files/scatterplot.png)
+![Cycle time scatter plot](/files/scatterplot.png)
 
 ![Histogram](/files/histogram.png)
 
 _The graphs are just examples and are not related to the above example data._
 
-If you have a product management system (Jira, Gitlab, etc), then you can just pull the team's performance data directly, and calculate a probability forecast. At its simplest, a Kanban workflow contains a prioritized list of work to do, work in progress, and work completed. To expose deeper patterns, your workflow should include the discreet steps. If, for instance, your team uses an asynchronous code review process rather than mobbing, then code review would be another step in your workflow.
+If you have a product management system (Jira, GitLab, etc), then you can just pull the team's performance data directly, and calculate a probability forecast. At its simplest, a Kanban workflow contains a prioritized list of work to do, work in progress, and work completed. To expose deeper patterns, your workflow should include the discreet steps. If, for instance, your team uses an asynchronous code review process rather than mobbing, then code review would be another step in your workflow.
