@@ -7,11 +7,11 @@ I started maintaining this README several years ago and have found the process, 
 
 The short version is:
 
-> I enjoy helping and supporting others, and recognize our shared humanity.
+> I enjoy helping and supporting others, and understanding how we can better relate to each other.
 
 Put into the software development context:
 
-> I like to help product development teams do their job well, and find joy in it.
+> I help product development teams do their job well, and find joy in it.
 
 ## How I view my role
 
