@@ -2,16 +2,15 @@
 layout: post
 title: Probabilistic Forecasting, Monte Carlo simulations using Google Sheets
 ---
+![Forecasting header](/files/metrics_header.png) This article shows how to build the sets of metrics and charts to perform probabilistic forecasting. I am leaving the evangelising to others. If you are interested, the Agile Alliance has published a [case study](https://www.agilealliance.org/resources/experience-reports/actionable-metrics-siemens-health-services/) of Siemens Health Services that is a great representation of applying these techniques.
 
 My first experience with Kanban was in 2012 or 2013 when, as manager of a 10-person sustaining engineering team, I needed to organize software delivery against internal SLAs. We were responsible for resolving Support issues escalated to Engineering. The time frames and priorities changed daily, if not hourly. Managing via Scrum with sprints was simply not adaptive enough. I found a [great primer](https://www.infoq.com/minibooks/priming-kanban-jesper-boeg/) from Jesper Boeg on Kanban and over a month or so reinvented our development and release process around Kanban metrics. The turn around was dramatic and the team wonderfully successful.
 
-This article shows how to build the sets of metrics and charts to perform probabilistic forecasting. I am leaving the evangelising to others. If you are interested, the Agile Alliance has published a [case study](https://www.agilealliance.org/resources/experience-reports/actionable-metrics-siemens-health-services/) of Siemens Health Services that is a great representation of applying these techniques.
-
 Forecasting can be used to answer either of the following questions.
 
-**When** may we complete N items?
+- **When** may we complete N items?
 
-**How Many** items may we complete by D date?
+- **How Many** items may we complete by D date?
 
 There are many products available to use Kanban and Lean metrics for your software development. However, I put this together because switching tools can be a major undertaking and not always an option. So, if you want to make use of forecasting based on Monte Carlo simulations but do not want to invest in time and money to completely switch your project management tools, here I will explain the steps I used to generate these results using Google Sheets are my spreadsheet.
 
